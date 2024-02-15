@@ -2081,6 +2081,7 @@ GameObject:
   - component: {fileID: 905713082}
   - component: {fileID: 905713081}
   - component: {fileID: 905713085}
+  - component: {fileID: 905713086}
   m_Layer: 0
   m_Name: Barman
   m_TagString: Untagged
@@ -2262,6 +2263,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.121377826, y: 0.17333937}
   m_Size: {x: 0.5427556, y: 0.7325672}
   m_Direction: 0
+--- !u!114 &905713086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905713080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac01257972423a4c9bbdfe909c0a5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 839015844}
 --- !u!1 &1006564915
 GameObject:
   m_ObjectHideFlags: 0
