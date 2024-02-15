@@ -7,41 +7,56 @@ public class TopDownController : MonoBehaviour
     public float moveSpeed = 5f; // Speed at which the player moves
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private Vector2 moveDirection; // The current move direction of the player
+    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
     // Start is called before the first frame update
     void Start()
     {
-        // Get the Rigidbody2D component from the GameObject this script is attached to
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Process inputs from the keyboard
         ProcessInputs();
+        FlipSpriteBasedOnDirection();
+        
     }
 
     // FixedUpdate is called at a fixed interval and is used for physics updates
     void FixedUpdate()
     {
-        // Move the player
         Move();
     }
 
     void ProcessInputs()
     {
-        // Get horizontal and vertical input (arrow keys or WASD)
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        // Set the move direction based on the input
         moveDirection = new Vector2(moveX, moveY).normalized;
     }
 
     void Move()
     {
-        // Apply the movement to the player's Rigidbody2D component
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
+
+    void FlipSpriteBasedOnDirection()
+    {
+        // Check the direction of movement to flip the sprite accordingly
+        if (moveDirection.x < 0)
+        {
+            spriteRenderer.flipX = false; // Moving right, sprite looks to the right
+        }
+        else if (moveDirection.x > 0)
+        {
+            spriteRenderer.flipX = true; // Moving left, sprite looks to the left
+        }
+        // When moveDirection.x is 0, the sprite's orientation remains as is (no flipping).
+        // This means the sprite will face the last direction it moved in when stopping.
+    }
+
+
 }
