@@ -19,7 +19,7 @@ public class Client : MonoBehaviour
             if (PlayerInventory.instance.items.Count == requiredItems.Count && requiredItems.All(id => PlayerInventory.instance.items.Contains(id)))
             {
                 // Correct combination
-                Texto.text = $"Correct items delivered";
+                Texto.text = "Correct items delivered";
                 Debug.Log("Correct items delivered");
                 PlayerInventory.instance.RemoveItems(requiredItems); // Remove the correct items
 

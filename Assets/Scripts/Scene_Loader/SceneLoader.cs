@@ -19,20 +19,15 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(LoadSceneAdditive(gameScene[1]));
     }
 
-    public void AnimacionCarga()
-    {
-        
-        Animator animatorCarga = PanelAnimacion.GetComponent<Animator>();
-        animatorCarga.SetTrigger("StartAnimation");
-        
-
-    }
 
     public void CargarEscena(int EscenaACargar, int EscenaADescargar)
     {
         
-        AnimacionCarga();
+        
+        PanelAnimacion.SetActive(true);
         StartCoroutine(EsperarSegundos(EscenaACargar, EscenaADescargar));
+        StartCoroutine(Esperar1Segundo());
+        
         
     }
     public void DescargarEscena(int EscenaActual)
@@ -41,15 +36,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.UnloadSceneAsync(gameScene[EscenaActual]);
 
     }
-    public void llamarAEsperar()
-    {
-        StartCoroutine(Esperar1Segundo());
-        
-    }
 
     IEnumerator Esperar1Segundo()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.1f);
+        PanelAnimacion.SetActive(false);
     }
     IEnumerator EsperarSegundos(int EscenaACargar, int EscenaADescargar)
     {
