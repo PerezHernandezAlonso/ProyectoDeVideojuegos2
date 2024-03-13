@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ff8043f9ce69fd489e86503734ab724
+guid: b97d16bd54dbed7418b2110c8a704105
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -83,7 +83,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638458854958272709
+  platformSettingsDirtyTick: 638458855130365821
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: perrito ayudante
+  - name: perrito ayudante caminandoooo
     originalName: 
-    pivot: {x: 0.46428567, y: -0.069767445}
+    pivot: {x: 0.50000006, y: -0.069767445}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 28
+      width: 170
       height: 43
-    spriteID: d478ef912e4836941bb532142c0676c2
+    spriteID: d2d8a2e82b68aa34db4a01b517a0c298
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +139,103 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: perrito ayudante caminandoooo_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 28
+      height: 43
+    spriteID: 52e713733d8b8d840ae7c16bd365a30d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: perrito ayudante caminandoooo_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 4
+      width: 30
+      height: 42
+    spriteID: bd81d68a5ef71cc438d6e754ccfd3b04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: perrito ayudante caminandoooo_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 4
+      width: 28
+      height: 43
+    spriteID: 1ec70cc5739538d4fbf1535e35be47af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: perrito ayudante caminandoooo_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 4
+      width: 27
+      height: 42
+    spriteID: 21c10cc19b8bf9e4d8ede78bdc250a13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -523436816
-    name: perrito ayudante
+    guid: 123623399
+    name: perrito ayudante caminandoooo
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: perrito ayudante
+    - name: perrito ayudante caminandoooo
       frameIndex: 0
       cellRect:
         x: 11
         y: 3
-        width: 28
+        width: 170
         height: 43
-      spriteId: d478ef912e4836941bb532142c0676c2
+      spriteId: d2d8a2e82b68aa34db4a01b517a0c298
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -197,4 +277,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 48, y: 48}
+  canvasSize: {x: 192, y: 48}

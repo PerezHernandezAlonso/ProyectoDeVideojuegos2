@@ -17,8 +17,7 @@ public class TopDownController : MonoBehaviour
     private Vector3 moveDirection; // The current move direction of the player, including depth
     private float verticalMovement = 0f; // Separate variable for vertical movement
     private SpriteRenderer spriteRenderer; // To flip the sprite based on direction
-
-
+   
 
 
     // Start is called before the first frame update
@@ -26,6 +25,7 @@ public class TopDownController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -64,6 +64,7 @@ public class TopDownController : MonoBehaviour
     {
         Vector3 movement = new Vector3(moveDirection.x * moveSpeed, moveDirection.y, moveDirection.z);
         rb.velocity = movement;
+        
     }
 
     void FlipSpriteBasedOnDirection()
