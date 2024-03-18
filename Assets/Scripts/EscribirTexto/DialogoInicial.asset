@@ -37,3 +37,14 @@ MonoBehaviour:
   - speakerName: Barman
     speakerImage: {fileID: 0}
     sentence: "Averigua qu\xE9 es lo que quieren y te digo c\xF3mo elaborarlo."
+  - speakerName: Sloof
+    speakerImage: {fileID: 0}
+    sentence: "Bueno chico, tras estos a\xF1os de aprendizaje creo que lleg\xF3 el
+      momento de que te encargues de un caso."
+  - speakerName: Sloof
+    speakerImage: {fileID: 0}
+    sentence: Habla conmigo si necesitas ayuda, aunque no creo que haga falta.
+  - speakerName: Sloof
+    speakerImage: {fileID: 0}
+    sentence: "Adelante querido Woofson, demuestra que est\xE1s hecho de la madera
+      de los grandes."
