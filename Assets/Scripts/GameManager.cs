@@ -4,40 +4,36 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance; // Singleton instance
+    public static GameManager Instance { get; private set; }
 
-    public GameObject objectToDisappear; // The object that will disappear
-    private int itemsCollected = 0; // Track the number of items collected
+    public bool BI_0 { get; private set; } = false;
+   
 
     private void Awake()
     {
-        // Singleton pattern to ensure only one instance exists
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Keeps the game manager across scenes
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Ensures there's only one GameManager instance
         }
     }
 
-    public void IncrementItemsCollected()
+    
+    public void SetBI_0(bool value)
     {
-        itemsCollected++;
-        CheckItemsCollected();
+        BI_0 = value;
     }
 
-    void CheckItemsCollected()
+    
+    public void ToggleBI_0()
     {
-        // If 2 items are collected, make another object disappear
-        if (itemsCollected >= 2)
-        {
-            if (objectToDisappear != null)
-            {
-                objectToDisappear.SetActive(false);
-            }
-        }
+        BI_0 = !BI_0;
     }
 }
+
+ 
+  

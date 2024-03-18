@@ -10,6 +10,12 @@ public class Client : MonoBehaviour
     public int clientId; // Unique ID for each client
     private bool isColliding = false;
     public TextMeshPro Texto;
+    public Dialogue[] Dialogo;
+
+    private void Start()
+    {
+         
+    }
 
     private void Update()
     {
@@ -20,6 +26,7 @@ public class Client : MonoBehaviour
             {
                 // Correct combination
                 Texto.text = "Correct items delivered";
+                
                 Debug.Log("Correct items delivered");
                 PlayerInventory.instance.RemoveItems(requiredItems); // Remove the correct items
 
