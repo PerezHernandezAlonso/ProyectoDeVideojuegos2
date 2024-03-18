@@ -1781,7 +1781,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0073249936, y: 0.5372001, z: -3.02}
+  m_LocalPosition: {x: 0, y: 0, z: -3.7}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2367,6 +2367,7 @@ GameObject:
   - component: {fileID: 660318412}
   - component: {fileID: 660318413}
   - component: {fileID: 660318414}
+  - component: {fileID: 660318415}
   m_Layer: 0
   m_Name: PerroDetective
   m_TagString: Player
@@ -2387,11 +2388,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  depthMoveSpeed: 3
+  depthMoveSpeed: 1.2
   verticalMoveSpeed: 1
   zAxisLimits: {x: -1, y: -0.1}
-  yAxisLimits: {x: -0.03, y: 0.61}
-  xAxisLimits: {x: -2.624, y: 2.747}
+  yAxisLimits: {x: 0.47, y: 1.123}
+  xAxisLimits: {x: -2.54, y: 2.89}
 --- !u!212 &660318407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2433,7 +2434,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1148159035690489779, guid: 5ff8043f9ce69fd489e86503734ab724, type: 3}
+  m_Sprite: {fileID: 4703809532366641438, guid: 5b570890e6d01ae449d0502d6f55e0c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2443,7 +2444,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &660318408
 Transform:
   m_ObjectHideFlags: 0
@@ -2453,7 +2454,7 @@ Transform:
   m_GameObject: {fileID: 660318403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.52, y: 3.09, z: -7.99}
+  m_LocalPosition: {x: -4.15, y: 3.72, z: -8}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2506,8 +2507,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.14846694, y: 0.3839634, z: 0.10050207}
-  m_Center: {x: 0.0034233928, y: 0.2219817, z: -0.006231446}
+  m_Size: {x: 0.20190346, y: 0.41602546, z: 0.10050207}
+  m_Center: {x: -0.012607753, y: 0.0028912723, z: -0.006231446}
 --- !u!54 &660318413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2549,6 +2550,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SiguienteEscena: 0
   EscenaActual: 0
+--- !u!95 &660318415
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660318403}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6faa7e0a0b026f4da74365376828fd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &665470675
 GameObject:
   m_ObjectHideFlags: 0
@@ -5184,6 +5206,7 @@ MonoBehaviour:
   requiredItems: 010000000400000005000000
   clientId: 1
   Texto: {fileID: 503828795}
+  Dialogo: []
 --- !u!65 &1394544751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5608,6 +5631,7 @@ MonoBehaviour:
   requiredItems: 010000000500000003000000
   clientId: 4
   Texto: {fileID: 503828795}
+  Dialogo: []
 --- !u!65 &1473398183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7688,7 +7712,7 @@ Transform:
   m_GameObject: {fileID: 2022958885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.329, z: -2.07}
+  m_LocalPosition: {x: 0, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7852,6 +7876,7 @@ MonoBehaviour:
   requiredItems: 030000000400000002000000
   clientId: 3
   Texto: {fileID: 503828795}
+  Dialogo: []
 --- !u!65 &2039861369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8177,6 +8202,7 @@ MonoBehaviour:
   requiredItems: 020000000100000004000000
   clientId: 2
   Texto: {fileID: 503828795}
+  Dialogo: []
 --- !u!65 &2104962185
 BoxCollider:
   m_ObjectHideFlags: 0
