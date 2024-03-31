@@ -16,3 +16,9 @@ MonoBehaviour:
   - speakerName: Ciervo
     speakerImage: {fileID: 0}
     sentence: "Oh, esto podr\xEDa animarme, toma esto a cambio."
+  - speakerName: None
+    speakerImage: {fileID: 0}
+    sentence: '"Has recibido SOMNIFERO"'
+  - speakerName: None
+    speakerImage: {fileID: 0}
+    sentence: 

@@ -5,9 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public bool[] ConditionsBartender;
+    public bool[] ConditionsCiervo;
+    public bool[] ConditionsPaloma;
+    public bool[] ConditionsPanda;
+    public bool[] ConditionsRatona;
+    public bool isTalking = false;
+    
 
-    public bool BI_0 { get; private set; } = false;
-   
+
 
     private void Awake()
     {
@@ -23,16 +29,7 @@ public class GameManager : MonoBehaviour
     }
 
     
-    public void SetBI_0(bool value)
-    {
-        BI_0 = value;
-    }
 
-    
-    public void ToggleBI_0()
-    {
-        BI_0 = !BI_0;
-    }
 }
 
  

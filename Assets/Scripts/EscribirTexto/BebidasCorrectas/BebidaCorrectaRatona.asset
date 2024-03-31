@@ -22,3 +22,8 @@ MonoBehaviour:
   - speakerName: Ratona
     speakerImage: {fileID: 0}
     sentence: "\xA1Tengo alergia a las aves!"
+  - speakerName: Ratona
+    speakerImage: {fileID: 0}
+    sentence: '
+
+'

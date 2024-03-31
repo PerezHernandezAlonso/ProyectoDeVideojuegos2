@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: Ratona
     speakerImage: {fileID: 0}
     sentence: "\xA1No es no!"
+  - speakerName: Ratona
+    speakerImage: {fileID: 0}
+    sentence: 

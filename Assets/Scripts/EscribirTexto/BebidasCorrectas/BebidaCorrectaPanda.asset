@@ -20,3 +20,6 @@ MonoBehaviour:
     speakerImage: {fileID: 0}
     sentence: "Mira chaval, estoy de humor, si fastidias a la ratona te dir\xE9 algo
       interesante"
+  - speakerName: Panda
+    speakerImage: {fileID: 0}
+    sentence: 

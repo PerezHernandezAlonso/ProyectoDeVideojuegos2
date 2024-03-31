@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd9f9d1fbcf57f1418f4b9f1666b0425, type: 3}
-  m_Name: DesbloqueoBebidaPaloma
+  m_Name: DialogoPaloma2
   m_EditorClassIdentifier: 
   dialogueLines:
-  - speakerName: Paloma
+  - speakerName: 
     speakerImage: {fileID: 0}
-    sentence: "Estoy tan enamorada\u2026"
-  - speakerName: Paloma
+    sentence: "(Le has metido el somn\xEDfero en la bebida a la paloma y se ha quedado
+      dormida)"
+  - speakerName: 
     speakerImage: {fileID: 0}
-    sentence: "Le intent\xE9 dar una pluma y la rechaz\xF3 sin pensarlo."
-  - speakerName: Paloma
+    sentence: (Una pluma se cae al suelo y decides tomarla)
+  - speakerName: 
     speakerImage: {fileID: 0}
-    sentence: 
+    sentence: "-Pensamiento-\n\xBFY si le doy una pluma de la paloma a su amada?
+      No creo que le vaya a hacer gracia.. jeje"

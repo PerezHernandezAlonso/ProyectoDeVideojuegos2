@@ -16,3 +16,6 @@ MonoBehaviour:
   - speakerName: Paloma
     speakerImage: {fileID: 0}
     sentence: "Esto sabe peor que mis l\xE1grimas por ella."
+  - speakerName: Paloma
+    speakerImage: {fileID: 0}
+    sentence: 

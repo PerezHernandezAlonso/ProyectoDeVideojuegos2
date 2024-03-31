@@ -11,38 +11,148 @@ public class Client : MonoBehaviour
     private bool isColliding = false;
     public TextMeshPro Texto;
     public Dialogue[] Dialogo;
+    public int[] Conditions;
+    private GameManager gamemanager;
+    private DialogueManager dialoguemanager;
+ 
 
     private void Start()
     {
-         
+        gamemanager = FindObjectOfType<GameManager>();
+        dialoguemanager = FindObjectOfType<DialogueManager>();
     }
 
     private void Update()
-    {
-        if (isColliding == true && Input.GetKeyDown(KeyCode.F))
-        {
-            // Check if player has exactly the required items, no more, no less
-            if (PlayerInventory.instance.items.Count == requiredItems.Count && requiredItems.All(id => PlayerInventory.instance.items.Contains(id)))
+    {  
+        
+            if (isColliding == true && Input.GetKeyDown(KeyCode.F) && gamemanager.isTalking == false)
             {
-                // Correct combination
-                Texto.text = "Correct items delivered";
-                
-                Debug.Log("Correct items delivered");
-                PlayerInventory.instance.RemoveItems(requiredItems); // Remove the correct items
 
-                if (clientId == 3) // Specific logic for client 3
-                {
-                    Texto.text = "Correct, puzzle completed";
-                    Debug.Log("Correct, puzzle completed");
-                }
-            }
-            else
+            switch (clientId)
             {
-                // Incorrect combination or extra items present, remove them either way
-                Texto.text = "Error, incorrect items or extra items present";
-                Debug.Log("Error, incorrect items or extra items present");
-                PlayerInventory.instance.RemoveItems(PlayerInventory.instance.items.ToList()); // Attempt to remove all items player has, adjusting for actual game logic
+                case 1:
+                    if (gamemanager.ConditionsCiervo[0] == false || gamemanager.ConditionsPaloma[0] == false || gamemanager.ConditionsPanda[0] == false || gamemanager.ConditionsRatona[0] == false)
+                    {
+                        dialoguemanager.StartDialogue(Dialogo[0]);
+                        gamemanager.ConditionsCiervo[0] = true;
+                    }
+                    else if (gamemanager.ConditionsCiervo[0] == true)
+                    {
+                        drinkDialoguesOne();
+                        if (CheckItems() == true)
+                        {
+                            gamemanager.ConditionsCiervo[1] = true; //Recibimos somnifero
+                        }
+                        cleanInventory();
+
+                    }
+                    break;
+
+                case 2:
+                    if (gamemanager.ConditionsCiervo[0] == false || gamemanager.ConditionsPaloma[0] == false || gamemanager.ConditionsPanda[0] == false || gamemanager.ConditionsRatona[0] == false)
+                    {
+                        dialoguemanager.StartDialogue(Dialogo[0]);
+                        gamemanager.ConditionsPaloma[0] = true;
+                    }
+                    else if (gamemanager.ConditionsPaloma[0] == true && gamemanager.ConditionsPaloma[1] == false)
+                    {
+                        drinkDialoguesOne();
+                        if (CheckItems() == true)
+                        gamemanager.ConditionsPaloma[1] = true;
+                    } else if (gamemanager.ConditionsPaloma[1] == true && gamemanager.ConditionsCiervo[1] == true) 
+                    { 
+
+                        if (CheckItems() == true)
+                        {
+                            dialoguemanager.StartDialogue(Dialogo[3]); //Recibes la pluma
+                            gamemanager.ConditionsPaloma[2] = true;
+                        } else
+                        {
+                            dialoguemanager.StartDialogue(Dialogo[2]);
+                        }
+                        cleanInventory();
+                    }
+                        
+                        break;
+
+                    case 3:
+                        if (gamemanager.ConditionsCiervo[0] == false || gamemanager.ConditionsPaloma[0] == false || gamemanager.ConditionsPanda[0] == false || gamemanager.ConditionsRatona[0] == false)
+                        {
+                            dialoguemanager.StartDialogue(Dialogo[0]);
+                            gamemanager.ConditionsPanda[0] = true;
+                        }
+                        else if (gamemanager.ConditionsPanda[0] == true && gamemanager.ConditionsPanda[1] == false)
+                        {
+                            drinkDialoguesOne();
+                            if (CheckItems() == true)
+                            {
+                                gamemanager.ConditionsPanda[1] = true;
+                            }
+                        cleanInventory();
+                        } else if (gamemanager.ConditionsRatona[2] == true)
+                        {
+                            dialoguemanager.StartDialogue(Dialogo[3]);
+                        }
+                        break;
+
+                    case 4:
+                        if (gamemanager.ConditionsCiervo[0] == false || gamemanager.ConditionsPaloma[0] == false || gamemanager.ConditionsPanda[0] == false || gamemanager.ConditionsRatona[0] == false)
+                        {
+                            dialoguemanager.StartDialogue(Dialogo[0]);
+                            gamemanager.ConditionsRatona[0] = true;
+                        }
+                        else if (gamemanager.ConditionsRatona[0] == true && gamemanager.ConditionsRatona[1] == false)
+                        {
+                            drinkDialoguesOne();
+                            if (CheckItems() == true)
+                            {
+                                gamemanager.ConditionsRatona[1] = true;
+                            }
+                        cleanInventory();
+                    } else if (gamemanager.ConditionsRatona[1] == true && gamemanager.ConditionsPaloma[2] == true && gamemanager.ConditionsPanda[1] == true)
+                        {
+                            if (CheckItems() == true)
+                            {
+                                dialoguemanager.StartDialogue(Dialogo[3]);
+                                gamemanager.ConditionsRatona[2] = true;
+                                
+                            }
+                        cleanInventory();
+                    }
+                        break;
+
+                }
+
             }
+        
+        
+    }
+    private void cleanInventory()
+    {
+        PlayerInventory.instance.RemoveItems(PlayerInventory.instance.items.ToList());
+    }
+    private void drinkDialoguesOne()
+    {
+        if (CheckItems() == true)
+        {
+            dialoguemanager.StartDialogue(Dialogo[1]);
+        }
+        else
+        {
+            dialoguemanager.StartDialogue(Dialogo[2]);
+        }
+    }
+    private bool CheckItems()
+    {
+        // Check if player has exactly the required items, no more, no less
+        if (PlayerInventory.instance.items.Count == requiredItems.Count && requiredItems.All(id => PlayerInventory.instance.items.Contains(id)))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+            PlayerInventory.instance.RemoveItems(PlayerInventory.instance.items.ToList());
         }
     }
     private void OnTriggerEnter(Collider other)

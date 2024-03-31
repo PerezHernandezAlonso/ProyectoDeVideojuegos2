@@ -16,3 +16,6 @@ MonoBehaviour:
   - speakerName: Panda
     speakerImage: {fileID: 0}
     sentence: "M\xE1s te vale traerme algo mejor que esto o tendr\xE1s serios problemas."
+  - speakerName: Panda
+    speakerImage: {fileID: 0}
+    sentence: 

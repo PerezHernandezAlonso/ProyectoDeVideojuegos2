@@ -17,12 +17,15 @@ public class TopDownController : MonoBehaviour
     private Vector3 moveDirection; // The current move direction of the player, including depth
     private float verticalMovement = 0f; // Separate variable for vertical movement
     private SpriteRenderer spriteRenderer; // To flip the sprite based on direction
+
+    private GameManager gameManager;
    
 
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindAnyObjectByType<GameManager>();
         rb = GetComponent<Rigidbody>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         
@@ -31,15 +34,21 @@ public class TopDownController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         ProcessInputs();
         FlipSpriteBasedOnDirection();
+        
+        
     }
 
     // FixedUpdate is called at a fixed interval and is used for physics updates
     void FixedUpdate()
     {
+        
         Move();
         ClampPosition();
+        
+        
     }
 
     void ProcessInputs()

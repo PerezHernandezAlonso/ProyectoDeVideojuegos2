@@ -16,3 +16,6 @@ MonoBehaviour:
   - speakerName: Ciervo
     speakerImage: {fileID: 0}
     sentence: "\xBFQu\xE9 quieres? \xBFmatarme? Ya estoy lo suficientemente d\xE9bil."
+  - speakerName: Ciervo
+    speakerImage: {fileID: 0}
+    sentence: 

@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: Paloma
     speakerImage: {fileID: 0}
     sentence: "Ella es mi gran amor, \xA1la dulce ratona!"
+  - speakerName: Paloma
+    speakerImage: {fileID: 0}
+    sentence: 

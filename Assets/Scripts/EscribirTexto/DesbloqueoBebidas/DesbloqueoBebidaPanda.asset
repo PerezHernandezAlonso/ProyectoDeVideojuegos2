@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: Panda
     speakerImage: {fileID: 0}
     sentence: Me ponen de mal humor.
+  - speakerName: Panda
+    speakerImage: {fileID: 0}
+    sentence: 

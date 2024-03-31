@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: Ciervo
     speakerImage: {fileID: 0}
     sentence: "No salgo de casa sin mis somn\xEDferos, qu\xE9 dura es la vida."
+  - speakerName: Ciervo
+    speakerImage: {fileID: 0}
+    sentence: 

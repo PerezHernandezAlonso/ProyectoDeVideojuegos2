@@ -8,7 +8,12 @@ public class Barman : MonoBehaviour
     private bool isColliding = false;
     public GameObject menu;
     private bool MenuIsActive = false;
+    public Dialogue[] Dialogo;
 
+    private void Start()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(Dialogo[0]);
+    }
     private void Update()
     {
         if (isColliding == true && Input.GetKeyDown(KeyCode.F))
@@ -49,4 +54,6 @@ public class Barman : MonoBehaviour
         menu.SetActive(false);
         MenuIsActive = false;
     }
+
+    
 }
