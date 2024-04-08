@@ -10,6 +10,7 @@ public class TopDownController : MonoBehaviour
     public Vector2 zAxisLimits = new Vector2(-5f, 5f); // Limits for movement along the Z axis
     public Vector2 yAxisLimits = new Vector2(-3f, 3f); // Limits for movement along the Y axis
     public Vector2 xAxisLimits = new Vector2(-10f, 10f);
+    private Animator animator; // Reference to the Animator component
 
 
 
@@ -28,17 +29,28 @@ public class TopDownController : MonoBehaviour
         gameManager = FindAnyObjectByType<GameManager>();
         rb = GetComponent<Rigidbody>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
+        animator = GetComponent<Animator>(); // Get the Animator component
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+
         ProcessInputs();
         FlipSpriteBasedOnDirection();
-        
-        
+
+        // Update the Animator based on movement
+        if (moveDirection.magnitude > 0.01)
+        {
+            animator.SetBool("isWalking", true); // Assume you have a boolean parameter named 'isWalking' in your Animator
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+
     }
 
     // FixedUpdate is called at a fixed interval and is used for physics updates

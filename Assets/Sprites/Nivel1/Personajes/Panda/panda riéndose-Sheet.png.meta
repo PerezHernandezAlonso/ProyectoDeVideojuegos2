@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20c96b17192a0674c82cd89f5d3bc27c
+guid: 6f9dbb2c8d21fad4785cf1c064748404
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,106 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panda idle-Sheet_0
+      name: "panda ri\xE9ndose-Sheet_12"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 0
-        width: 48
-        height: 48
+        width: 31
+        height: 39
       alignment: 9
-      pivot: {x: 0.51096493, y: 0.02119875}
+      pivot: {x: 0.5, y: 0.01956811}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f1053d4745f354ca8d8e7156bcbcd5
-      internalID: -848774115
+      spriteID: 6bb7d625d27a8c24797327dbd318c071
+      internalID: -459669923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_1
+      name: "panda ri\xE9ndose-Sheet_13"
       rect:
         serializedVersion: 2
-        x: 48
+        x: 56
         y: 0
-        width: 48
-        height: 48
+        width: 32
+        height: 37
       alignment: 9
-      pivot: {x: 0.5073099, y: 0.013888809}
+      pivot: {x: 0.51973677, y: 0.027738223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67797f9f804d71f4999e75f63a37a0bc
-      internalID: -498339176
+      spriteID: 6371d86e4ce102144bbfb3551cd55b5b
+      internalID: 1650008079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_2
+      name: "panda ri\xE9ndose-Sheet_14"
       rect:
         serializedVersion: 2
-        x: 96
+        x: 108
         y: 0
-        width: 48
-        height: 48
+        width: 28
+        height: 38
       alignment: 9
-      pivot: {x: 0.5109649, y: 0.013888809}
+      pivot: {x: 0.4548874, y: 0.023545666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f6725e46f409db489c62cbbef903f0a
-      internalID: 1953018618
+      spriteID: 7324a889ce9e75f459d59a5888a0cf1f
+      internalID: 105879838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_3
+      name: "panda ri\xE9ndose-Sheet_15"
       rect:
         serializedVersion: 2
-        x: 144
+        x: 156
         y: 0
-        width: 48
-        height: 48
+        width: 28
+        height: 37
       alignment: 9
-      pivot: {x: 0.5109647, y: 0.010233837}
+      pivot: {x: 0.44736862, y: 0.027738223}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c803fbea55c8ec0419a338525c8e53da
-      internalID: -666579311
+      spriteID: bb779599f557f344b8feeca9d885621b
+      internalID: 185936802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_4
+      name: "panda ri\xE9ndose-Sheet_16"
       rect:
         serializedVersion: 2
-        x: 192
+        x: 204
         y: 0
-        width: 48
-        height: 48
+        width: 28
+        height: 37
       alignment: 9
-      pivot: {x: 0.5109641, y: 0.013888809}
+      pivot: {x: 0.4548874, y: 0.022048322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e298e86ed17b8bb408ffbc18a874aebe
-      internalID: -4470135
+      spriteID: 7829b5275bd65a846a0238a1fd636b80
+      internalID: -1321499345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "panda ri\xE9ndose-Sheet_17"
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0.4548874, y: 0.02908583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e8d3a21bd169b46969bc78c41e906e
+      internalID: -1635491872
       vertices: []
       indices: 
       edges: []
@@ -225,11 +246,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      panda idle-Sheet_0: -848774115
-      panda idle-Sheet_1: -498339176
-      panda idle-Sheet_2: 1953018618
-      panda idle-Sheet_3: -666579311
-      panda idle-Sheet_4: -4470135
+      "panda ri\xE9ndose-Sheet_0": -103278756
+      "panda ri\xE9ndose-Sheet_1": -119037638
+      "panda ri\xE9ndose-Sheet_10": 78890822
+      "panda ri\xE9ndose-Sheet_11": 545008395
+      "panda ri\xE9ndose-Sheet_12": -459669923
+      "panda ri\xE9ndose-Sheet_13": 1650008079
+      "panda ri\xE9ndose-Sheet_14": 105879838
+      "panda ri\xE9ndose-Sheet_15": 185936802
+      "panda ri\xE9ndose-Sheet_16": -1321499345
+      "panda ri\xE9ndose-Sheet_17": -1635491872
+      "panda ri\xE9ndose-Sheet_2": -1265823745
+      "panda ri\xE9ndose-Sheet_3": 549572226
+      "panda ri\xE9ndose-Sheet_4": 746924549
+      "panda ri\xE9ndose-Sheet_5": -1627968831
+      "panda ri\xE9ndose-Sheet_6": -1610725742
+      "panda ri\xE9ndose-Sheet_7": 1149206211
+      "panda ri\xE9ndose-Sheet_8": -1649010308
+      "panda ri\xE9ndose-Sheet_9": -2125750417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,12 +14,20 @@ public class Client : MonoBehaviour
     public int[] Conditions;
     private GameManager gamemanager;
     private DialogueManager dialoguemanager;
+    private Animator animator;
+    private Animator animatorPanda;
+    private GameObject Panda;
+    public SpriteRenderer iconos;
  
 
     private void Start()
     {
         gamemanager = FindObjectOfType<GameManager>();
         dialoguemanager = FindObjectOfType<DialogueManager>();
+        animator = GetComponent<Animator>();
+        Panda = GameObject.Find("Client3");
+        animatorPanda = Panda.GetComponent<Animator>();
+        
     }
 
     private void Update()
@@ -115,7 +123,8 @@ public class Client : MonoBehaviour
                             {
                                 dialoguemanager.StartDialogue(Dialogo[3]);
                                 gamemanager.ConditionsRatona[2] = true;
-                                
+                                animator.SetBool("Estornudando", true);
+                                animatorPanda.SetBool("Riendo", true);
                             }
                         cleanInventory();
                     }
