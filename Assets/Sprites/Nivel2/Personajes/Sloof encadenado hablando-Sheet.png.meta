@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 021d9fa4f8e791f4190515b367960393
+guid: dd93a172cf520b44cbe28c21e3977707
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nubepelea-Sheet_0
+      name: Sloof encadenado hablando-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80df10554a582d84ca14255e481068d9
-      internalID: 1757359284
+      spriteID: c7b00f4fab8c13b4d9f2b2e286845d30
+      internalID: -281959569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_1
+      name: Sloof encadenado hablando-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5358da36b5f73f548b4209603df09a28
+      internalID: 865143233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sloof encadenado hablando-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8cc12a45955514c98168acd15740b2
-      internalID: -1946086255
+      spriteID: 98fdebe2e5c47ca4fb476ae447572df4
+      internalID: 822930596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_2
+      name: Sloof encadenado hablando-Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac64d282b5f8464787f4083766ee46d
-      internalID: 723463041
+      spriteID: 4aab8feed79cab345a1274422c76144d
+      internalID: -2058064718
       vertices: []
       indices: 
       edges: []
@@ -183,9 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nubepelea-Sheet_0: 1757359284
-      nubepelea-Sheet_1: -1946086255
-      nubepelea-Sheet_2: 723463041
+      Sloof encadenado hablando-Sheet_0: -281959569
+      Sloof encadenado hablando-Sheet_1: 865143233
+      Sloof encadenado hablando-Sheet_2: 822930596
+      Sloof encadenado hablando-Sheet_3: -2058064718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

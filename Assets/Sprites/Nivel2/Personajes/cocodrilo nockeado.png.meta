@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 021d9fa4f8e791f4190515b367960393
+guid: 727cbff88daf92d44b79197e9b91398f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nubepelea-Sheet_0
+      name: cocodrilo nockeado_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,50 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80df10554a582d84ca14255e481068d9
-      internalID: 1757359284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nubepelea-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c8cc12a45955514c98168acd15740b2
-      internalID: -1946086255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nubepelea-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bac64d282b5f8464787f4083766ee46d
-      internalID: 723463041
+      spriteID: c1e8f17d50832cd44b829b90c47ca1bc
+      internalID: -2449887
       vertices: []
       indices: 
       edges: []
@@ -183,9 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nubepelea-Sheet_0: 1757359284
-      nubepelea-Sheet_1: -1946086255
-      nubepelea-Sheet_2: 723463041
+      cocodrilo nockeado_0: -2449887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

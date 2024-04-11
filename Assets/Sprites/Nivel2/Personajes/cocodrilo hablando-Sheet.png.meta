@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 021d9fa4f8e791f4190515b367960393
+guid: b896ec2e4d980ed41bcf3f778a2988df
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nubepelea-Sheet_0
+      name: cocodrilo hablando-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80df10554a582d84ca14255e481068d9
-      internalID: 1757359284
+      spriteID: 73293e7b0870d2a47b60fe2bd1f9b968
+      internalID: 1134862597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_1
+      name: cocodrilo hablando-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3b134a10962904ea002369b618abf4
+      internalID: 702876956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cocodrilo hablando-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8cc12a45955514c98168acd15740b2
-      internalID: -1946086255
+      spriteID: 44c699e5e5de0364cab4c9ae51e2fd91
+      internalID: -1569949661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_2
+      name: cocodrilo hablando-Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +187,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac64d282b5f8464787f4083766ee46d
-      internalID: 723463041
+      spriteID: 2c02bb3cbd4f8844d90f368dd1092b5a
+      internalID: -1123729971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cocodrilo hablando-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60527928673976e4093e22df138647a5
+      internalID: -1735438439
       vertices: []
       indices: 
       edges: []
@@ -183,9 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nubepelea-Sheet_0: 1757359284
-      nubepelea-Sheet_1: -1946086255
-      nubepelea-Sheet_2: 723463041
+      cocodrilo hablando-Sheet_0: 1134862597
+      cocodrilo hablando-Sheet_1: 702876956
+      cocodrilo hablando-Sheet_2: -1569949661
+      cocodrilo hablando-Sheet_3: -1123729971
+      cocodrilo hablando-Sheet_4: -1735438439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 021d9fa4f8e791f4190515b367960393
+guid: 8a90387ef98d3f54c9c80e0543864b3e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nubepelea-Sheet_0
+      name: perrito malvado perrito encarcelado hablando Woofson-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80df10554a582d84ca14255e481068d9
-      internalID: 1757359284
+      spriteID: 88f2cf59a7a47ff40985a3792e2cba4f
+      internalID: -41259440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_1
+      name: perrito malvado perrito encarcelado hablando Woofson-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ef38089129b54438cd2683563c8dc3
+      internalID: 415682966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perrito malvado perrito encarcelado hablando Woofson-Sheet_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8cc12a45955514c98168acd15740b2
-      internalID: -1946086255
+      spriteID: bdbbe441065d4a149bda8eea8cd3afd1
+      internalID: 518436234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nubepelea-Sheet_2
+      name: perrito malvado perrito encarcelado hablando Woofson-Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac64d282b5f8464787f4083766ee46d
-      internalID: 723463041
+      spriteID: 2b6c2512c77e21940945cc92cada332b
+      internalID: 1430756410
       vertices: []
       indices: 
       edges: []
@@ -183,9 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nubepelea-Sheet_0: 1757359284
-      nubepelea-Sheet_1: -1946086255
-      nubepelea-Sheet_2: 723463041
+      perrito malvado perrito encarcelado hablando Woofson-Sheet_0: -41259440
+      perrito malvado perrito encarcelado hablando Woofson-Sheet_1: 415682966
+      perrito malvado perrito encarcelado hablando Woofson-Sheet_2: 518436234
+      perrito malvado perrito encarcelado hablando Woofson-Sheet_3: 1430756410
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
