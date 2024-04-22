@@ -277,6 +277,8 @@ MonoBehaviour:
   - SceneLoader
   - MainMenu
   - Level1
+  - Level2_1
+  - Level2_2
   PanelAnimacion: {fileID: 1498686915}
 --- !u!1 &1498686915
 GameObject:

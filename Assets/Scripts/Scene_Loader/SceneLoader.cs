@@ -9,14 +9,18 @@ public class SceneLoader : MonoBehaviour
 
     public static SceneLoader Instance;
     [SerializeField] public GameObject PanelAnimacion;
-    
+    private Level2Manager level2manager;
+
 
     [ContextMenu("CargarEscena")]
 
+
+ 
     public void Awake()
     {
         Instance = this;
         StartCoroutine(LoadSceneAdditive(gameScene[1]));
+        
     }
 
 
@@ -27,8 +31,11 @@ public class SceneLoader : MonoBehaviour
         PanelAnimacion.SetActive(true);
         StartCoroutine(EsperarSegundos(EscenaACargar, EscenaADescargar));
         StartCoroutine(Esperar1Segundo());
-        
-        
+        level2manager.SearchTriggers();
+
+
+
+
     }
     public void DescargarEscena(int EscenaActual)
     {
@@ -41,6 +48,7 @@ public class SceneLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(1.1f);
         PanelAnimacion.SetActive(false);
+        
     }
     IEnumerator EsperarSegundos(int EscenaACargar, int EscenaADescargar)
     {
