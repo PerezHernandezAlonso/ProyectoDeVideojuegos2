@@ -631,7 +631,7 @@ Transform:
   m_GameObject: {fileID: 654232833}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1014.5, y: 683, z: -476}
+  m_LocalPosition: {x: 1014.5, y: 773, z: -476}
   m_LocalScale: {x: 62.593502, y: 62.593502, z: 62.593502}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,7 +676,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 98165a858b97f154b9908b6c44de1e4b, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -713,8 +713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58, y: -259}
-  m_SizeDelta: {x: 1222.2942, y: 540}
+  m_AnchoredPosition: {x: 5, y: -216}
+  m_SizeDelta: {x: 1665.7329, y: 567.1129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1354192546
 GameObject:
