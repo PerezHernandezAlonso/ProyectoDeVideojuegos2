@@ -53,10 +53,10 @@ public class SettingsMenu : MonoBehaviour
     {
         if (mute)
         {
-            AudioListener.volume = -80;
+            audioMixer.SetFloat("volume", 0);
         } else{
 
-            AudioListener.volume = 0;
+            audioMixer.SetFloat("volume", -80);
         }
     }
 
