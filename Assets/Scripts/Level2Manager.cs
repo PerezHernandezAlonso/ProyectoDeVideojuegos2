@@ -79,7 +79,7 @@ public class Level2Manager : MonoBehaviour
     {
         
         Debug.Log("Incorrect Trigger!");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
         
 
     }

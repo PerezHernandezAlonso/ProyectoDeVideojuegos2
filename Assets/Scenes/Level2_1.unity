@@ -2968,7 +2968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Perrito: {fileID: 1489860648}
-  nextScene: 4
+  nextScene: 6
   correctTriggerIndex: 0
   MenuBarriles: {fileID: 598874584}
 --- !u!114 &1590490161

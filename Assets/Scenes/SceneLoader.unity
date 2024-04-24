@@ -276,7 +276,9 @@ MonoBehaviour:
   gameScene:
   - SceneLoader
   - MainMenu
+  - ComicScene
   - Level1
+  - Comic2Scene
   - Level2_1
   - Level2_2
   - Level2_3
