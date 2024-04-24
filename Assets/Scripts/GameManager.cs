@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool[] ConditionsPaloma;
     public bool[] ConditionsPanda;
     public bool[] ConditionsRatona;
+    public bool[] ConditionsCocodrilo;
     public bool isTalking = false;
     
 

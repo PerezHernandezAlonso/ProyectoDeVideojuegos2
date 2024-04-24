@@ -18,6 +18,7 @@ public class Client : MonoBehaviour
     private Animator animatorPanda;
     private GameObject Panda;
     public SpriteRenderer iconos;
+    public GameObject menuBarriles;
  
 
     private void Start()
@@ -31,8 +32,8 @@ public class Client : MonoBehaviour
     }
 
     private void Update()
-    {  
-        
+    {
+
             if (isColliding == true && Input.GetKeyDown(KeyCode.F) && gamemanager.isTalking == false)
             {
 
@@ -130,6 +131,21 @@ public class Client : MonoBehaviour
                     }
                         break;
 
+                case 5:
+                    
+                    if (gamemanager.ConditionsCocodrilo[0] == false)
+                    {
+
+                        dialoguemanager.StartDialogue(Dialogo[0]);
+                        gamemanager.ConditionsCocodrilo[0] = true;
+                    } else
+                    {
+                        
+                        menuBarriles.SetActive(true);
+                    }
+                    
+
+                    break;
                 }
 
             }

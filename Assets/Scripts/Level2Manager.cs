@@ -11,17 +11,24 @@ public class Level2Manager : MonoBehaviour
     public GameObject currentTrigger = null;
     public int nextScene;
     public AssignTriggers TriggerAssigns;
+    public int NumeroBarriles;
+    public GameObject[] Barrels = new GameObject[4];
+
+
+    
     
 
     void Start()
     {
         // Randomly assign one trigger as the correct one
-        correctTriggerIndex = Random.Range(0, triggers.Length);
+        
         
     }
 
     void Update()
     {
+        
+
         if (Input.GetKeyDown(KeyCode.F) && currentTrigger != null)
         {
             int index = System.Array.IndexOf(triggers, currentTrigger);
@@ -37,6 +44,8 @@ public class Level2Manager : MonoBehaviour
 
         SearchTriggers();
         TriggerAssigner();
+        SearchBarrels();
+        //printBarrels();
     }
 
     void OnTriggerEnter(Collider other)
@@ -62,6 +71,7 @@ public class Level2Manager : MonoBehaviour
         
         Debug.Log("Correct Trigger!");
         SceneManager.LoadScene(TriggerAssigns.nextScene);
+        
 
     }
 
@@ -70,6 +80,7 @@ public class Level2Manager : MonoBehaviour
         
         Debug.Log("Incorrect Trigger!");
         SceneManager.LoadScene(3);
+        
 
     }
 
@@ -88,5 +99,40 @@ public class Level2Manager : MonoBehaviour
     public void TriggerAssigner()
     {
         TriggerAssigns = GameObject.Find("Puertas").GetComponent<AssignTriggers>();
+        correctTriggerIndex = TriggerAssigns.correctTriggerIndex;
+        switch (correctTriggerIndex)
+        {
+            case 0:
+                NumeroBarriles = 3;
+                break;
+            case 1:
+                NumeroBarriles = 4;
+                break;
+            case 2:
+                NumeroBarriles = 2;
+                break;
+            case 3:
+                NumeroBarriles = 1;
+                break;
+        }
     }
+
+    public void SearchBarrels()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Barrels[i] = GameObject.Find("Barril" + (i + 1).ToString());
+        }
+        for (int i = NumeroBarriles; i < 4; i++)
+        {
+            Barrels[i].SetActive(false);
+        }
+    }
+    /*public void printBarrels()
+    {
+        for (int i = 0; i < NumeroBarriles; i++)
+        {
+            Barrels[i].SetActive(true);
+        }
+    }*/
 }

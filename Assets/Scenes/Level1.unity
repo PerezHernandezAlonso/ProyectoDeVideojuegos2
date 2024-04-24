@@ -2725,6 +2725,14 @@ MonoBehaviour:
   - {fileID: 0}
   correctTriggerIndex: 0
   currentTrigger: {fileID: 0}
+  nextScene: 0
+  TriggerAssigns: {fileID: 0}
+  NumeroBarriles: 0
+  Barrels:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &665470675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,6 +4307,7 @@ MonoBehaviour:
   ConditionsPaloma: 00000000
   ConditionsPanda: 00000000
   ConditionsRatona: 00000000
+  ConditionsCocodrilo: 00
   isTalking: 0
 --- !u!1 &1056550719
 GameObject:
@@ -5434,6 +5443,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c0fa4a4116d9504e82f79202f43ef40, type: 2}
   Conditions: 
   iconos: {fileID: 1397510406}
+  menuBarriles: {fileID: 0}
 --- !u!65 &1394544751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5965,6 +5975,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b967d9b8840ff704f87d673ab7416f1d, type: 2}
   Conditions: 
   iconos: {fileID: 1397510406}
+  menuBarriles: {fileID: 0}
 --- !u!65 &1473398183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8217,6 +8228,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 033bf78001cb64b4caf54b27ebcefa88, type: 2}
   Conditions: 
   iconos: {fileID: 1397510406}
+  menuBarriles: {fileID: 0}
 --- !u!65 &2039861369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8683,6 +8695,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4b033056055f35a439cc40b326dc1d9e, type: 2}
   Conditions: 
   iconos: {fileID: 1397510406}
+  menuBarriles: {fileID: 0}
 --- !u!65 &2104962185
 BoxCollider:
   m_ObjectHideFlags: 0
