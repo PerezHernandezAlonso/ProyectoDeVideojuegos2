@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Client : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Client : MonoBehaviour
     private GameObject Panda;
     public SpriteRenderer iconos;
     public GameObject menuBarriles;
+    public SceneSelect sceneSelect;
  
 
     private void Start()
@@ -101,7 +103,10 @@ public class Client : MonoBehaviour
                         } else if (gamemanager.ConditionsRatona[2] == true)
                         {
                             dialoguemanager.StartDialogue(Dialogo[3]);
-                        }
+                        } else if (gamemanager.ConditionsPanda[2] == true)
+                    {
+                        sceneSelect.PlayGame();
+                    }
                         break;
 
                     case 4:

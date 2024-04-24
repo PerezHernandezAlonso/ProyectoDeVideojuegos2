@@ -30,7 +30,8 @@ public class startanimationdialogue : MonoBehaviour
         } else if ( Input.GetKeyDown(KeyCode.F) && gameManager.Conditionsanimation[0] == true)
         {
             Debug.Log("Prueba");
-            SceneManager.LoadScene(6);
+            sceneSelect.PlayGame();
+
         }
     }
 }

@@ -954,8 +954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 442.05103, y: -469.2274}
-  m_SizeDelta: {x: 984.835, y: 141.5393}
+  m_AnchoredPosition: {x: 447.5126, y: -449.33798}
+  m_SizeDelta: {x: 995.7582, y: 181.334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659170732
 MonoBehaviour:
@@ -1091,7 +1091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 712, y: -447}
+  m_AnchoredPosition: {x: 712, y: -400}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810274068
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pulse F para saltar la escena
+  m_text: Pulse F dos veces seguidas para saltar la escena
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebcc57d664c28674e941d7e14b66472e, type: 2}
   m_sharedMaterial: {fileID: -6155911294142992102, guid: ebcc57d664c28674e941d7e14b66472e, type: 2}
