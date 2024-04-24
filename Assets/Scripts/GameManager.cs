@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public bool[] ConditionsPanda;
     public bool[] ConditionsRatona;
     public bool[] ConditionsCocodrilo;
+    public bool[] Conditionsanimation;
     public bool isTalking = false;
     
 

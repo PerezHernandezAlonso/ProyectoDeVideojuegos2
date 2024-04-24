@@ -4308,6 +4308,7 @@ MonoBehaviour:
   ConditionsPanda: 00000000
   ConditionsRatona: 00000000
   ConditionsCocodrilo: 00
+  Conditionsanimation: 00
   isTalking: 0
 --- !u!1 &1056550719
 GameObject:

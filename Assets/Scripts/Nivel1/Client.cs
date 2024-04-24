@@ -143,8 +143,6 @@ public class Client : MonoBehaviour
                         
                         menuBarriles.SetActive(true);
                     }
-                    
-
                     break;
                 }
 

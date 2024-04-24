@@ -255,7 +255,7 @@ Transform:
   m_GameObject: {fileID: 947963982}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 439.62405, y: 262.24344, z: 37.069855}
+  m_LocalPosition: {x: 439.62405, y: 262.24344, z: -2239.9302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -279,6 +279,8 @@ MonoBehaviour:
   - ComicScene
   - Level1
   - Comic2Scene
+  - "Animaci\xF3nLevel2 1"
+  - "Animaci\xF3nLevel2"
   - Level2_1
   - Level2_2
   - Level2_3
@@ -493,7 +495,7 @@ Transform:
   m_GameObject: {fileID: 1533630695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -687,7 +689,7 @@ Transform:
   m_GameObject: {fileID: 2082681683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.3}
+  m_LocalPosition: {x: 0, y: 0, z: -3596}
   m_LocalScale: {x: 1.5391, y: 1.5391, z: 1.5391}
   m_ConstrainProportionsScale: 0
   m_Children:

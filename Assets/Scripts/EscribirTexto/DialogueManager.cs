@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
         currentLineIndex = 0;
         gameManager.isTalking = true;
         DisplayNextSentence();
+        Debug.Log("Estas aqui");
     }
 
     public void DisplayNextSentence()
@@ -59,5 +60,9 @@ public class DialogueManager : MonoBehaviour
         // Handle the end of the dialogue, maybe resetting or triggering other events
         gameManager.isTalking = false;
         
+        if (gameManager.Conditionsanimation[0] == false)
+        {
+            gameManager.Conditionsanimation[0] = true;
+        }
     }
 }
