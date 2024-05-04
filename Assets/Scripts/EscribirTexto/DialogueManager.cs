@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     private Dialogue.DialogueLine[] dialogueLines;
     private int currentLineIndex;
     private GameManager gameManager;
+    public GameObject dialogueBox;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class DialogueManager : MonoBehaviour
         gameManager.isTalking = true;
         DisplayNextSentence();
         Debug.Log("Estas aqui");
+        dialogueBox.SetActive(true);
     }
 
     public void DisplayNextSentence()
@@ -64,5 +66,6 @@ public class DialogueManager : MonoBehaviour
         {
             gameManager.Conditionsanimation[0] = true;
         }
+        dialogueBox.SetActive(false);
     }
 }

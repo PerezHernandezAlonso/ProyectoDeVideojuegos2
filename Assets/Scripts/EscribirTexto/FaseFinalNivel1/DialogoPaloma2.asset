@@ -24,6 +24,3 @@ MonoBehaviour:
     speakerImage: {fileID: -1148159035690489779, guid: 5ff8043f9ce69fd489e86503734ab724, type: 3}
     sentence: "-Pensamiento-\n\xBFY si le doy una pluma de la paloma a su amada?
       No creo que le vaya a hacer gracia.. jeje"
-  - speakerName: 
-    speakerImage: {fileID: 0}
-    sentence: 

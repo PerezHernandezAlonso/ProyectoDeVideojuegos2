@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20c96b17192a0674c82cd89f5d3bc27c
+guid: caaff3b87712b3b429695fb1f35245c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,106 +110,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panda idle-Sheet_9
+      name: panda idle sin puntitos_0
       rect:
         serializedVersion: 2
         x: 9
         y: 0
         width: 31
         height: 39
-      alignment: 9
-      pivot: {x: 0.5, y: 0.018668257}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ace88a678391c4f41bf091ac67e06167
-      internalID: 352248145
+      spriteID: 667b55b783671404584c18d3e2e50c62
+      internalID: -524291215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_10
+      name: panda idle sin puntitos_1
       rect:
         serializedVersion: 2
         x: 57
         y: 0
         width: 31
         height: 39
-      alignment: 9
-      pivot: {x: 0.5, y: 0.023166683}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f90e725d12abf943b34e624ad52e2c1
-      internalID: -1682666008
+      spriteID: 74baca6c65ab0bc448aa749267596d34
+      internalID: -1916964097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_11
+      name: panda idle sin puntitos_2
       rect:
         serializedVersion: 2
         x: 104
         y: 0
         width: 31
         height: 39
-      alignment: 9
-      pivot: {x: 0.533956, y: 0.018668257}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96743465faffb5546ba684df1e9c7b60
-      internalID: 1109683285
+      spriteID: 445c9e05855713b48b8fc2556174ab4b
+      internalID: -9901918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_12
+      name: panda idle sin puntitos_3
       rect:
         serializedVersion: 2
         x: 152
         y: 0
         width: 31
         height: 39
-      alignment: 9
-      pivot: {x: 0.53395575, y: 0.014169831}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d936a0ccae98d4ba34f1b178bf5e9b
-      internalID: -1163247751
+      spriteID: 8e99a696994158042a77e11d4b1f1215
+      internalID: -74814969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panda idle-Sheet_13
+      name: panda idle sin puntitos_4
       rect:
         serializedVersion: 2
         x: 201
         y: 0
         width: 31
         height: 39
-      alignment: 9
-      pivot: {x: 0.50565904, y: 0.023166683}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59305ab3639e99f429e546fdd6648e43
-      internalID: 1131231288
+      spriteID: a555632552a4dec49a5b8d6fa4725df5
+      internalID: -364211024
       vertices: []
       indices: 
       edges: []
@@ -225,21 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      panda idle-Sheet_0: -848774115
-      panda idle-Sheet_1: -498339176
-      panda idle-Sheet_10: -1682666008
-      panda idle-Sheet_11: 1109683285
-      panda idle-Sheet_12: -1163247751
-      panda idle-Sheet_13: 1131231288
-      panda idle-Sheet_14: 1059023162
-      panda idle-Sheet_2: 1953018618
-      panda idle-Sheet_3: -666579311
-      panda idle-Sheet_4: -4470135
-      panda idle-Sheet_5: 82593358
-      panda idle-Sheet_6: 1954197990
-      panda idle-Sheet_7: 1169486861
-      panda idle-Sheet_8: -333223579
-      panda idle-Sheet_9: 352248145
+      panda idle sin puntitos_0: -524291215
+      panda idle sin puntitos_1: -1916964097
+      panda idle sin puntitos_2: -9901918
+      panda idle sin puntitos_3: -74814969
+      panda idle sin puntitos_4: -364211024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
