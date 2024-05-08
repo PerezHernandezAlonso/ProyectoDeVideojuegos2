@@ -97,7 +97,7 @@ public class SloofMode : MonoBehaviour
                 scentsActive[7] = true;
             }
         }
-        if (step2 == true && (gamemanager.ConditionsPanda[1] == false || gamemanager.ConditionsRatona[2] == false))
+        if (step2 == true && gamemanager.ConditionsPaloma[2] == true && gamemanager.ConditionsRatona[1] == true && (gamemanager.ConditionsPanda[1] == false || gamemanager.ConditionsRatona[2] == false))
         {
             step3 = true;
         }
