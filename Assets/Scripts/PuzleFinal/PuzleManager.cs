@@ -6,6 +6,7 @@ public class PuzleManager : MonoBehaviour
 {
     public GameObject CablesHolder;
     public GameObject[] Cables;
+    public InteractuableDoor interactuableDoor;
 
     [SerializeField]
     int totalCables = 0;
@@ -30,15 +31,21 @@ public class PuzleManager : MonoBehaviour
 
         Debug.Log("Cable Conectado");
 
-        if(correctedCables == totalCables)
+        if(correctedCables == totalCables)  
         {
             Debug.Log("Puzle Completado!");
+            CompletedPuzle();
         }
     }
 
     public void wrongMove()
     {
         correctedCables -= 1;
+    }
+
+    void CompletedPuzle()
+    {
+        interactuableDoor.ReactiveCameraPlayer();
     }
 
 }
