@@ -7,6 +7,10 @@ public class PuzleManager : MonoBehaviour
     public GameObject CablesHolder;
     public GameObject[] Cables;
     public InteractuableDoor interactuableDoor;
+    public GameObject objectToDisable1;
+    public GameObject objectToDisable2;
+    public GameObject objectToDisable3;
+    public GameObject objectToDisable4;
 
     [SerializeField]
     int totalCables = 0;
@@ -45,7 +49,25 @@ public class PuzleManager : MonoBehaviour
 
     void CompletedPuzle()
     {
+    if(objectToDisable1 != null)
+        objectToDisable1.SetActive(false);
+
+    if(objectToDisable2 != null)
+        objectToDisable2.SetActive(false);
+
+    if(objectToDisable3 != null)
+        objectToDisable3.SetActive(false);
+
+    if(objectToDisable4 != null)
+        objectToDisable4.SetActive(false);
+    if (interactuableDoor != null)
+    {
         interactuableDoor.ReactiveCameraPlayer();
+    }
+    else
+    {
+        Debug.LogError("No se ha asignado el objeto InteractuableDoor en el PuzleManager.");
+    }
     }
 
 }
