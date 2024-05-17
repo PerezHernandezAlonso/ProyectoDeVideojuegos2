@@ -12,13 +12,14 @@ public class DialogueManager : MonoBehaviour
     private int currentLineIndex;
     private GameManager gameManager;
     public GameObject dialogueBox;
+    public bool isTalking;
 
     void Start()
     {
         gameManager = FindAnyObjectByType<GameManager>();
         dialogueLines = new Dialogue.DialogueLine[0];
         currentLineIndex = 0;
-        Debug.Log("Has iniciado el dialogo");
+        
     }
     void Update()
     {
@@ -36,8 +37,9 @@ public class DialogueManager : MonoBehaviour
         currentLineIndex = 0;
         gameManager.isTalking = true;
         DisplayNextSentence();
-        Debug.Log("Estas aqui");
+        Debug.Log("Has iniciado el dialogo");
         dialogueBox.SetActive(true);
+        isTalking = true;
     }
 
     public void DisplayNextSentence()
@@ -67,5 +69,6 @@ public class DialogueManager : MonoBehaviour
             gameManager.Conditionsanimation[0] = true;
         }
         dialogueBox.SetActive(false);
+        isTalking = false;
     }
 }

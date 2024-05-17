@@ -31,7 +31,7 @@ public class SceneLoader : MonoBehaviour
         PanelAnimacion.SetActive(true);
         StartCoroutine(EsperarSegundos(EscenaACargar, EscenaADescargar));
         StartCoroutine(Esperar1Segundo());
-        level2manager.SearchTriggers();
+        //level2manager.SearchTriggers();
 
 
 

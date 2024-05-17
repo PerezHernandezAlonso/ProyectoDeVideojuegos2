@@ -11,19 +11,38 @@ public class SloofMode : MonoBehaviour
     public bool[] scentsActive; // ciervo = 0, paloma = 1, panda = 2, ratona = 3. Bebida1 = 4, Bebida 2 = 5, Bebida3 = 6, Bebida4 = 7, Bebida5 = 8.
     public bool step1, step2, step3, step4 = false;
 
+    public FilledBar filledBar;
+
     private void Update()
     {
         checkScents();
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && filledBar.currentValue > 0.1f)
         {
+            filledBar.StartDraining();
             if (MenuIsActive == false)
             {
-                LoadMenu();
+                MenuIsActive = true;
+                
             }
             else
             {
-                UnloadMenu();
+                MenuIsActive = false;
+                
             }
+        }
+
+        if (MenuIsActive == true)
+        {
+            LoadMenu();
+        } else
+        {
+            UnloadMenu();
+        }
+
+        if (filledBar.currentValue == 0)
+        {
+            UnloadMenu();
+            filledBar.StartFilling();
         }
 
 

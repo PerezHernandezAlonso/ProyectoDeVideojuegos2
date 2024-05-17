@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 142634687}
   - component: {fileID: 142634690}
   - component: {fileID: 142634689}
-  - component: {fileID: 142634691}
   m_Layer: 0
   m_Name: DialogueBox (1)
   m_TagString: Untagged
@@ -218,7 +217,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142634686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14b6624da2ed3cb489283c897b2e0f74, type: 3}
   m_Name: 
@@ -228,7 +227,7 @@ MonoBehaviour:
   libre: 0
   isTalking: 0
   gameManager: {fileID: 1475348297}
-  sceneSelect: {fileID: 142634691}
+  sceneSelect: {fileID: 0}
 --- !u!114 &142634690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,27 +235,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142634686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b1b968be0d200c4db4861c1a361483c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speakerImage: {fileID: 1189832951}
   dialogueText: {fileID: 678480666}
---- !u!114 &142634691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142634686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7085aa65e7f11bc409cc2fd64673d16d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SiguienteEscena: 6
-  EscenaActual: 5
+  dialogueBox: {fileID: 142634686}
 --- !u!1 &150567409
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +564,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  Scents: []
 --- !u!95 &403613017
 Animator:
   serializedVersion: 5
@@ -674,6 +661,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scents: {fileID: 0}
+  gamemanager: {fileID: 0}
+  allScents: []
+  scentsActive: 
+  step1: 0
+  step2: 0
+  step3: 0
+  step4: 0
+  filledBar: {fileID: 0}
 --- !u!114 &403613022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2345,6 +2340,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1985032531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1985032533}
+  - component: {fileID: 1985032532}
+  - component: {fileID: 1985032534}
+  - component: {fileID: 1985032535}
+  m_Layer: 0
+  m_Name: DialogueManager2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1985032532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985032531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1b968be0d200c4db4861c1a361483c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakerImage: {fileID: 1189832951}
+  dialogueText: {fileID: 678480666}
+  dialogueBox: {fileID: 142634686}
+--- !u!4 &1985032533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985032531}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.0451565, y: 0.557714, z: 0.024757385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1985032534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985032531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b6624da2ed3cb489283c897b2e0f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 1985032532}
+  dialogue: {fileID: 11400000, guid: f3fb6c844a193a346a9a900592a97825, type: 2}
+  libre: 0
+  isTalking: 0
+  gameManager: {fileID: 1475348297}
+  sceneSelect: {fileID: 1985032535}
+--- !u!114 &1985032535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985032531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7085aa65e7f11bc409cc2fd64673d16d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SiguienteEscena: 6
+  EscenaActual: 5
 --- !u!1 &2081375773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2530,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146023896}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &2146023898
 Camera:
   m_ObjectHideFlags: 0
@@ -2531,5 +2607,6 @@ SceneRoots:
   - {fileID: 1593129085}
   - {fileID: 1147954395}
   - {fileID: 1475348296}
+  - {fileID: 1985032533}
   - {fileID: 142634688}
   - {fileID: 403613025}

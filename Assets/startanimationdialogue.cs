@@ -7,8 +7,6 @@ public class startanimationdialogue : MonoBehaviour
 {
     public DialogueManager dialogueManager;
     public Dialogue dialogue;
-    public bool libre = false;
-    public bool isTalking = false;
     public GameManager gameManager;
     public SceneSelect sceneSelect;
     
@@ -22,15 +20,18 @@ public class startanimationdialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && libre == false &&  gameManager.Conditionsanimation[0] == false)
+        if (Input.GetKeyDown(KeyCode.F) && gameManager.Conditionsanimation[0] == false)
         {
             dialogueManager.StartDialogue(dialogue);
-            libre = true;
-            isTalking = true;
-        } else if ( Input.GetKeyDown(KeyCode.F) && gameManager.Conditionsanimation[0] == true)
+            gameManager.Conditionsanimation[0] = true;
+        } else 
         {
-            Debug.Log("Prueba");
-            sceneSelect.PlayGame();
+            if (Input.GetKeyDown(KeyCode.F) && dialogueManager.isTalking == false)
+            {
+                Debug.Log("Prueba");
+                sceneSelect.PlayGame();
+            }
+            
 
         }
     }

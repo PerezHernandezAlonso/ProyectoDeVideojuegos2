@@ -14,7 +14,7 @@ public class AssignTriggers : MonoBehaviour
     {
         
         level2manager = Perrito.GetComponent<Level2Manager>();
-        level2manager.SearchTriggers();
+        //level2manager.SearchTriggers();
         correctTriggerIndex = Random.Range(0, 4);
         MenuBarriles.SetActive(false);
     }

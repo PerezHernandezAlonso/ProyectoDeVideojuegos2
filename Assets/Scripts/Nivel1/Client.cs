@@ -12,7 +12,6 @@ public class Client : MonoBehaviour
     private bool isColliding = false;
     public TextMeshPro Texto;
     public Dialogue[] Dialogo;
-    public int[] Conditions;
     private GameManager gamemanager;
     private DialogueManager dialoguemanager;
     private Animator animator;

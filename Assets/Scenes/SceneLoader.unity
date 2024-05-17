@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &947963983
 Transform:
   m_ObjectHideFlags: 0
@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 1533630698}
   - component: {fileID: 1533630697}
   - component: {fileID: 1533630696}
+  - component: {fileID: 1533630699}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -501,6 +502,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1533630699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533630695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4d09431ca3fba49b16945b36b83fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameScene:
+  - SceneLoader
+  - MainMenu
+  - ComicScene
+  - Level1
+  - Comic2Scene
+  - "Animaci\xF3nLevel2 1"
+  - "Animaci\xF3nLevel2"
+  - Level2_1
+  - Level2_2
+  - Level2_3
+  - Level2_4
+  - Level2_5
+  PanelAnimacion: {fileID: 1498686915}
 --- !u!1 &1831848057
 GameObject:
   m_ObjectHideFlags: 0
