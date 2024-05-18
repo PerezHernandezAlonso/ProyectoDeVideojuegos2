@@ -4409,6 +4409,7 @@ MonoBehaviour:
   fillTime: 60
   drainTime: 15
   currentValue: 0
+  animator: {fileID: 1489860649}
 --- !u!114 &1646576193
 MonoBehaviour:
   m_ObjectHideFlags: 0

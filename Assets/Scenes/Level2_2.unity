@@ -993,6 +993,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &712732663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712732667}
+  - component: {fileID: 712732666}
+  - component: {fileID: 712732665}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &712732665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712732663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &712732666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712732663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &712732667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712732663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790572636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1250,7 @@ GameObject:
   - component: {fileID: 983186127}
   - component: {fileID: 983186126}
   - component: {fileID: 983186125}
+  - component: {fileID: 983186129}
   m_Layer: 0
   m_Name: Puerta3
   m_TagString: Untagged
@@ -1303,6 +1372,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983186123}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &983186129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983186123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a224a7d81b5ebc48ad2e15fd7f76441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1590490162}
+  collider: {fileID: 0}
 --- !u!1 &1200516056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1399,7 @@ GameObject:
   - component: {fileID: 1200516060}
   - component: {fileID: 1200516059}
   - component: {fileID: 1200516058}
+  - component: {fileID: 1200516062}
   m_Layer: 0
   m_Name: Puerta2
   m_TagString: Untagged
@@ -1437,6 +1521,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200516056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1200516062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200516056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a224a7d81b5ebc48ad2e15fd7f76441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1590490162}
+  collider: {fileID: 0}
 --- !u!1 &1210545483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +2027,7 @@ GameObject:
   - component: {fileID: 1324880789}
   - component: {fileID: 1324880788}
   - component: {fileID: 1324880787}
+  - component: {fileID: 1324880791}
   m_Layer: 0
   m_Name: Puerta1
   m_TagString: Untagged
@@ -2050,6 +2149,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324880785}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1324880791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324880785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a224a7d81b5ebc48ad2e15fd7f76441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1590490162}
+  collider: {fileID: 0}
 --- !u!1 &1340580381
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,7 +2498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1489860649
 Animator:
   serializedVersion: 5
@@ -2618,6 +2731,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Scents: []
+  filledBar: {fileID: 0}
+  MenuIsActive: 0
 --- !u!1 &1582933067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,6 +2828,7 @@ GameObject:
   - component: {fileID: 1590490159}
   - component: {fileID: 1590490160}
   - component: {fileID: 1590490161}
+  - component: {fileID: 1590490162}
   m_Layer: 0
   m_Name: Puertas
   m_TagString: Untagged
@@ -2769,6 +2885,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perrito: {fileID: 0}
   targetPosition: {x: 0, y: 0.5, z: -1}
+--- !u!114 &1590490162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590490158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d363ab738bca434fa1fe9c066c80809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggers:
+  - {fileID: 1324880785}
+  - {fileID: 1200516056}
+  - {fileID: 983186123}
+  - {fileID: 1641932802}
+  correctTriggerIndex: 0
+  currentTrigger: {fileID: 0}
+  nextScene: 0
+  TriggerAssigns: {fileID: 0}
+  NumeroBarriles: 0
+  Barrels:
+  - {fileID: 137915078}
+  - {fileID: 367716206}
+  - {fileID: 71114370}
+  - {fileID: 1340580381}
+  Scents:
+  - {fileID: 1210545483}
+  - {fileID: 1231330814}
+  - {fileID: 1901567440}
+  - {fileID: 175822820}
+  filledBar: {fileID: 1465449382}
+  MenuIsActive: 0
 --- !u!1 &1641932802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2932,7 @@ GameObject:
   - component: {fileID: 1641932806}
   - component: {fileID: 1641932805}
   - component: {fileID: 1641932804}
+  - component: {fileID: 1641932808}
   m_Layer: 0
   m_Name: Puerta4
   m_TagString: Untagged
@@ -2903,6 +3054,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641932802}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1641932808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641932802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a224a7d81b5ebc48ad2e15fd7f76441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1590490162}
+  collider: {fileID: 0}
 --- !u!1 &1697999063
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,3 +3918,4 @@ SceneRoots:
   - {fileID: 1980594246}
   - {fileID: 945596439}
   - {fileID: 1323015160}
+  - {fileID: 712732667}

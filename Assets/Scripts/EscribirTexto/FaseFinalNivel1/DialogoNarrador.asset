@@ -16,3 +16,6 @@ MonoBehaviour:
   - speakerName: Narrador
     speakerImage: {fileID: 0}
     sentence: "\xBFLo has resuelto? Me estaba quedando dormido."
+  - speakerName: Narrador
+    speakerImage: {fileID: 0}
+    sentence: 

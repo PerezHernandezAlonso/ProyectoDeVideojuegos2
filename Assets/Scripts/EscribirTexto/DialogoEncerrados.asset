@@ -29,3 +29,6 @@ MonoBehaviour:
   - speakerName: 
     speakerImage: {fileID: 0}
     sentence: "Pulsa \"F\" para llamar la atenci\xF3n del Cocodrilo"
+  - speakerName: 
+    speakerImage: {fileID: 0}
+    sentence: "Pulsa \"F\" para llamar la atenci\xF3n del Cocodrilo"

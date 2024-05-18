@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: Paloma
     speakerImage: {fileID: 21300000, guid: 39c762f23a1f93942bfeba6560c36798, type: 3}
     sentence: "Le intent\xE9 dar una pluma y la rechaz\xF3 sin pensarlo."
+  - speakerName: 
+    speakerImage: {fileID: 21300000, guid: 39c762f23a1f93942bfeba6560c36798, type: 3}
+    sentence: 

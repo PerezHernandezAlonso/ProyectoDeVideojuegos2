@@ -39,6 +39,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2_4.unity
     guid: 201923af48475cf4396516644d51b299
   - enabled: 1
+    path: Assets/Scenes/PuzleFinal.unity
+    guid: 362f5f977e7e8524c8e2dce6a9b8820e
+  - enabled: 1
+    path: Assets/Scenes/Cinematica_final.unity
+    guid: 779f649ad95493e4d9336fedbab12fdc
+  - enabled: 0
     path: Assets/Scenes/Level2_5.unity
     guid: 7febfb95e20f29d48b3667030e7ef4b6
   m_configObjects: {}

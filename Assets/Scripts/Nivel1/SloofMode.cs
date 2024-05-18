@@ -13,6 +13,7 @@ public class SloofMode : MonoBehaviour
 
     public FilledBar filledBar;
 
+
     private void Update()
     {
         checkScents();

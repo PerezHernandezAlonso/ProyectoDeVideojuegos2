@@ -35,7 +35,7 @@ public class Client : MonoBehaviour
     private void Update()
     {
 
-            if (isColliding == true && Input.GetKeyDown(KeyCode.F) && gamemanager.isTalking == false)
+            if (isColliding == true && Input.GetKeyDown(KeyCode.F) == true && dialoguemanager.isTalking == false)
             {
 
             switch (clientId)
@@ -69,6 +69,7 @@ public class Client : MonoBehaviour
                         drinkDialoguesOne();
                         if (CheckItems() == true)
                         gamemanager.ConditionsPaloma[1] = true;
+                        cleanInventory();
                     } else if (gamemanager.ConditionsPaloma[1] == true && gamemanager.ConditionsCiervo[1] == true) 
                     { 
 
@@ -76,6 +77,8 @@ public class Client : MonoBehaviour
                         {
                             dialoguemanager.StartDialogue(Dialogo[3]); //Recibes la pluma
                             gamemanager.ConditionsPaloma[2] = true;
+                            Animator palomator = GetComponent<Animator>();
+                            palomator.SetBool("isAsleep", true);
                         } else
                         {
                             dialoguemanager.StartDialogue(Dialogo[2]);
@@ -99,9 +102,10 @@ public class Client : MonoBehaviour
                                 gamemanager.ConditionsPanda[1] = true;
                             }
                         cleanInventory();
-                        } else if (gamemanager.ConditionsRatona[2] == true)
+                        } else if (gamemanager.ConditionsRatona[2] == true && gamemanager.ConditionsPanda[2] == false)
                         {
                             dialoguemanager.StartDialogue(Dialogo[3]);
+                        gamemanager.ConditionsPanda[2] = true;
                         } else if (gamemanager.ConditionsPanda[2] == true)
                     {
                         sceneSelect.PlayGame();
@@ -179,7 +183,7 @@ public class Client : MonoBehaviour
         else
         {
             return false;
-            PlayerInventory.instance.RemoveItems(PlayerInventory.instance.items.ToList());
+            
         }
     }
     private void OnTriggerEnter(Collider other)

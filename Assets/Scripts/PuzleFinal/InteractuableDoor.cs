@@ -8,6 +8,10 @@ public class InteractuableDoor : MonoBehaviour
     public Camera camaraJugador;
     public Camera camaraPuzzle;
 
+    private void Start()
+    {
+        AssignPlayerCamera();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -21,6 +25,17 @@ public class InteractuableDoor : MonoBehaviour
     {
         camaraJugador.gameObject.SetActive(true);
         camaraPuzzle.gameObject.SetActive(false);
+    }
+
+    public void AssignPlayerCamera()
+    {
+        {
+            camaraJugador = FindObjectOfType<Camera>();
+            if (camaraJugador == null)
+            {
+                Debug.LogError("Player camera not found.");
+            }
+        }
     }
 }
 

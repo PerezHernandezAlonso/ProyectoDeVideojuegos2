@@ -526,7 +526,8 @@ MonoBehaviour:
   - Level2_2
   - Level2_3
   - Level2_4
-  - Level2_5
+  - PuzleFinal
+  - Cinematica_final
   PanelAnimacion: {fileID: 1498686915}
 --- !u!1 &1831848057
 GameObject:

@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshPro dialogueText;
     private Dialogue.DialogueLine[] dialogueLines;
     private int currentLineIndex;
-    private GameManager gameManager;
+    public GameManager gameManager;
     public GameObject dialogueBox;
     public bool isTalking;
 
@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         // Check if the "F" key was pressed and there is an active dialogue
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && isTalking == true)
         {
             DisplayNextSentence();
         }
@@ -32,14 +32,17 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        // Instead of clearing a queue, you reinitialize the array and reset the index
-        dialogueLines = dialogue.dialogueLines;
-        currentLineIndex = 0;
-        gameManager.isTalking = true;
-        DisplayNextSentence();
-        Debug.Log("Has iniciado el dialogo");
-        dialogueBox.SetActive(true);
-        isTalking = true;
+        if (isTalking != true)
+        {
+            dialogueLines = dialogue.dialogueLines;
+            currentLineIndex = 0;
+            DisplayNextSentence();
+            Debug.Log("Has iniciado el dialogo");
+            dialogueBox.SetActive(true);
+            isTalking = true;
+
+
+        }
     }
 
     public void DisplayNextSentence()
@@ -70,5 +73,6 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueBox.SetActive(false);
         isTalking = false;
+        Debug.Log("Ha terminado el dialogo");
     }
 }

@@ -11,9 +11,14 @@ public class FilledBar : MonoBehaviour
 
     private float targetValue = 1f;  // Target value for the image fill amount to approach
     public float currentValue;  // Current fill amount of the image
+    public Animator animator;
+    public GameObject PerroDetective;
+    
 
     void Start()
     {
+        PerroDetective = GameObject.FindGameObjectWithTag("Player");
+        animator = PerroDetective.GetComponent<Animator>();
         if (filledImage == null)
         {
             Debug.LogError("Filled Image component not assigned.");
@@ -56,6 +61,7 @@ public class FilledBar : MonoBehaviour
     // Call this method to start decreasing the fill amount
     public void StartDraining()
     {
+        animator.SetBool("SloofMode", true);
         targetValue = 0f;
     }
 
@@ -63,6 +69,6 @@ public class FilledBar : MonoBehaviour
     public void StartFilling()
     {
         targetValue = 1f;
-
+        animator.SetBool("SloofMode", false);
     }
 }

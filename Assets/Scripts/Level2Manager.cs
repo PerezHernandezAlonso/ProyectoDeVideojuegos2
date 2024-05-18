@@ -48,7 +48,7 @@ public class Level2Manager : MonoBehaviour
 
         //SearchTriggers();
         TriggerAssigner();
-        //SearchBarrels();
+        SearchBarrels();
         checkSloofMode();
         //printBarrels();
     }
@@ -149,10 +149,10 @@ public class Level2Manager : MonoBehaviour
         switch (correctTriggerIndex)
         {
             case 0:
-                NumeroBarriles = 3;
+                NumeroBarriles = 4;
                 break;
             case 1:
-                NumeroBarriles = 4;
+                NumeroBarriles = 3;
                 break;
             case 2:
                 NumeroBarriles = 2;
@@ -163,17 +163,14 @@ public class Level2Manager : MonoBehaviour
         }
     }
 
-    /*public void SearchBarrels()
+    public void SearchBarrels()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Barrels[i] = GameObject.Find("Barril" + (i + 1).ToString());
-        }
+
         for (int i = NumeroBarriles; i < 4; i++)
         {
             Barrels[i].SetActive(false);
         }
-    }*/
+    }
     /*public void printBarrels()
     {
         for (int i = 0; i < NumeroBarriles; i++)

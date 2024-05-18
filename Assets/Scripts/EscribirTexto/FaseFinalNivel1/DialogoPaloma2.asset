@@ -21,6 +21,11 @@ MonoBehaviour:
     speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
     sentence: (Una pluma se cae al suelo y decides tomarla)
   - speakerName: 
-    speakerImage: {fileID: -1148159035690489779, guid: 5ff8043f9ce69fd489e86503734ab724, type: 3}
-    sentence: "-Pensamiento-\n\xBFY si le doy una pluma de la paloma a su amada?
-      No creo que le vaya a hacer gracia.. jeje"
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: "-Pensamiento-\n\xBFY si le doy una pluma de la paloma a su amada? "
+  - speakerName: 
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: No creo que le vaya a hacer gracia.. jeje
+  - speakerName: 
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: 

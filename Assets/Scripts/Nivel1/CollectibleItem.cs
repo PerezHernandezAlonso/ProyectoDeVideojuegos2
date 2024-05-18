@@ -7,14 +7,15 @@ public class CollectibleItem : MonoBehaviour
 {
     public int itemId; // Unique ID for each item
     private bool isColliding = false;
-    public TextMeshPro Texto;
+    public Dialogue dialogo;
+    public DialogueManager dialogueManager;
 
     private void Update()
     {
         if (isColliding == true && Input.GetKeyDown(KeyCode.F))
         {
             PlayerInventory.instance.AddItem(itemId);
-            Texto.text = $"Item {itemId} collected";
+            dialogueManager.StartDialogue(dialogo);
             Debug.Log($"Item {itemId} collected");
         }
     }

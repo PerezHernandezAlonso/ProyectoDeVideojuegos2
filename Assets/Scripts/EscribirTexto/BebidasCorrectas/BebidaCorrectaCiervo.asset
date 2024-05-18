@@ -19,3 +19,6 @@ MonoBehaviour:
   - speakerName: None
     speakerImage: {fileID: 0}
     sentence: '"Has recibido SOMNIFERO"'
+  - speakerName: None
+    speakerImage: {fileID: 0}
+    sentence: 
