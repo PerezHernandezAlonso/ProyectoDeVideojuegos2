@@ -276,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10cb94dec7b72594baf18a264e5084f4, type: 3}
+  m_Sprite: {fileID: 152281014, guid: d90152b6cfb6e53479d4e6b4d99fe787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -444,7 +444,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10cb94dec7b72594baf18a264e5084f4, type: 3}
+  m_Sprite: {fileID: 152281014, guid: d90152b6cfb6e53479d4e6b4d99fe787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1046,7 +1046,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10cb94dec7b72594baf18a264e5084f4, type: 3}
+  m_Sprite: {fileID: 152281014, guid: d90152b6cfb6e53479d4e6b4d99fe787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2826,6 +2826,8 @@ MonoBehaviour:
   fillTime: 60
   drainTime: 15
   currentValue: 0
+  animator: {fileID: 0}
+  PerroDetective: {fileID: 0}
 --- !u!114 &1129404688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3100,7 +3102,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10cb94dec7b72594baf18a264e5084f4, type: 3}
+  m_Sprite: {fileID: 152281014, guid: d90152b6cfb6e53479d4e6b4d99fe787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3503,6 +3505,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Scents: []
+  filledBar: {fileID: 0}
+  MenuIsActive: 0
 --- !u!1 &1533263628
 GameObject:
   m_ObjectHideFlags: 0
