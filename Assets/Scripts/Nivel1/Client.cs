@@ -109,6 +109,8 @@ public class Client : MonoBehaviour
                         } else if (gamemanager.ConditionsPanda[2] == true)
                     {
                         sceneSelect.PlayGame();
+                        gamemanager.ConditionsPanda[2] = false;
+                        Debug.Log("El panda te ha llevado al siguiente nivel");
                     }
                         break;
 

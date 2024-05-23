@@ -18,21 +18,15 @@ public class Level2Manager : MonoBehaviour
     public FilledBar filledBar;
     public bool MenuIsActive;
 
-
-    
-    
-
     void Start()
     {
-        // Randomly assign one trigger as the correct one
-        
-        
+        // Initialize the triggers and barrels
+        TriggerAssigner();
+        SearchBarrels();
     }
 
     void Update()
     {
-        
-
         if (Input.GetKeyDown(KeyCode.F) && currentTrigger != null)
         {
             int index = System.Array.IndexOf(triggers, currentTrigger);
@@ -46,11 +40,7 @@ public class Level2Manager : MonoBehaviour
             }
         }
 
-        //SearchTriggers();
-        TriggerAssigner();
-        SearchBarrels();
         checkSloofMode();
-        //printBarrels();
     }
 
     public void checkSloofMode()
@@ -58,21 +48,12 @@ public class Level2Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && filledBar.currentValue > 0.1f)
         {
             filledBar.StartDraining();
-            if (MenuIsActive == false)
-            {
-                MenuIsActive = true;
-
-            }
-            else
-            {
-                MenuIsActive = false;
-
-            }
+            MenuIsActive = !MenuIsActive;
         }
 
-        if (MenuIsActive == true)
+        if (MenuIsActive)
         {
-            for (int i = 0; i <Scents.Length; i++)
+            for (int i = 0; i < Scents.Length; i++)
             {
                 Scents[i].SetActive(false);
             }
@@ -96,51 +77,31 @@ public class Level2Manager : MonoBehaviour
             MenuIsActive = false;
         }
     }
-    public void CurrentTriggerSetter(Collider other)
+
+    public void CurrentTriggerSetter(GameObject trigger)
     {
-        if (System.Array.IndexOf(triggers, other.gameObject) != -1)
-        {
-            currentTrigger = other.gameObject;
-        }
+        currentTrigger = trigger;
     }
-    public void CurrentTriggerUnsetter(Collider other)
+
+    public void CurrentTriggerUnsetter(GameObject trigger)
     {
-        if (currentTrigger == other.gameObject)
+        if (currentTrigger == trigger)
         {
             currentTrigger = null;
         }
     }
 
-
     void CorrectOption()
     {
-        
         Debug.Log("Correct Trigger!");
         SceneManager.LoadScene(TriggerAssigns.nextScene);
-        
-
     }
 
     void IncorrectOption()
     {
-        
         Debug.Log("Incorrect Trigger!");
         SceneManager.LoadScene(7);
-        
-
     }
-
-    /*public void SearchTriggers()
-    {
-        for (int i = 0; i < triggers.Length; i++)
-        {
-            triggers[i] = GameObject.Find("Puerta" + (i + 1).ToString());
-            if (triggers[i] == null)
-            {
-                Debug.LogError("Trigger 'Puerta" + (i + 1) + "' not found in the scene.");
-            }
-        }
-    }*/
 
     public void TriggerAssigner()
     {
@@ -165,17 +126,9 @@ public class Level2Manager : MonoBehaviour
 
     public void SearchBarrels()
     {
-
-        for (int i = NumeroBarriles; i < 4; i++)
+        for (int i = 0; i < Barrels.Length; i++)
         {
-            Barrels[i].SetActive(false);
+            Barrels[i].SetActive(i < NumeroBarriles);
         }
     }
-    /*public void printBarrels()
-    {
-        for (int i = 0; i < NumeroBarriles; i++)
-        {
-            Barrels[i].SetActive(true);
-        }
-    }*/
 }

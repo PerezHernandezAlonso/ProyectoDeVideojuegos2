@@ -10,9 +10,15 @@ public class SloofMode : MonoBehaviour
     public GameObject[] allScents;
     public bool[] scentsActive; // ciervo = 0, paloma = 1, panda = 2, ratona = 3. Bebida1 = 4, Bebida 2 = 5, Bebida3 = 6, Bebida4 = 7, Bebida5 = 8.
     public bool step1, step2, step3, step4 = false;
+    public GameObject Sloof;
+    private Animator sloofAnimator;
 
     public FilledBar filledBar;
 
+    private void Start()
+    {
+        sloofAnimator = Sloof.GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -154,11 +160,13 @@ public class SloofMode : MonoBehaviour
         loadScents();
         Scents.SetActive(true);
         MenuIsActive = true;
+        sloofAnimator.SetBool("SloofMode", true);
     }
     private void UnloadMenu()
     {
         Scents.SetActive(false);
         MenuIsActive = false;
+        sloofAnimator.SetBool("SloofMode", false);
     }
 
     public void loadScents()

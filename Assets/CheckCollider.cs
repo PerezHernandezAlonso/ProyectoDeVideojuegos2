@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class CheckCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Level2Manager manager;
-    public Collider collider;
+
     void Start()
     {
-        collider = GetComponent<Collider>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (manager == null)
+        {
+            manager = FindObjectOfType<Level2Manager>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        manager.CurrentTriggerSetter(collider);
+        if (other.CompareTag("Player"))
+        {
+            manager.CurrentTriggerSetter(gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        manager.CurrentTriggerUnsetter(collider);
+        if (other.CompareTag("Player"))
+        {
+            manager.CurrentTriggerUnsetter(gameObject);
+        }
     }
 }

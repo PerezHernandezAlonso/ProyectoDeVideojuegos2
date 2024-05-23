@@ -18,9 +18,11 @@ public class SceneLoader : MonoBehaviour
  
     public void Awake()
     {
-        Instance = this;
+        if (Instance == null) Instance = this;
+        else if (Instance != this) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
         StartCoroutine(LoadSceneAdditive(gameScene[1]));
-        
+
     }
 
 
