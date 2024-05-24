@@ -11,17 +11,10 @@ public class TopDownController : MonoBehaviour
     public Vector2 yAxisLimits = new Vector2(-3f, 3f); // Limits for movement along the Y axis
     public Vector2 xAxisLimits = new Vector2(-10f, 10f);
     private Animator animator; // Reference to the Animator component
-
-
-
     private Rigidbody rb; // Reference to the Rigidbody component
     private Vector3 moveDirection; // The current move direction of the player, including depth
-    private float verticalMovement = 0f; // Separate variable for vertical movement
     private SpriteRenderer spriteRenderer; // To flip the sprite based on direction
-
     private GameManager gameManager;
-   
-
 
     // Start is called before the first frame update
     void Start()
@@ -31,36 +24,22 @@ public class TopDownController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>(); // Get the Animator component
 
+        // Ensure Rigidbody is set to interpolate for smoother movement
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         ProcessInputs();
-        FlipSpriteBasedOnDirection();
-
-        // Update the Animator based on movement
-        if (moveDirection.magnitude > 0.01)
-        {
-            animator.SetBool("isWalking", true); // Assume you have a boolean parameter named 'isWalking' in your Animator
-        }
-        else
-        {
-            animator.SetBool("isWalking", false);
-        }
-
-
+        UpdateAnimator();
     }
 
     // FixedUpdate is called at a fixed interval and is used for physics updates
     void FixedUpdate()
     {
-        
         Move();
         ClampPosition();
-        
-        
     }
 
     void ProcessInputs()
@@ -72,6 +51,26 @@ public class TopDownController : MonoBehaviour
         moveDirection = new Vector3(moveX, moveY, moveZ);
     }
 
+    void UpdateAnimator()
+    {
+        // Update the Animator based on movement
+        if (moveDirection.magnitude > 0.01f)
+        {
+            animator.SetBool("isWalking", true); // Assume you have a boolean parameter named 'isWalking' in your Animator
+            FlipSpriteBasedOnDirection();
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+    }
+
+    void Move()
+    {
+        Vector3 movement = new Vector3(moveDirection.x * moveSpeed, moveDirection.y, moveDirection.z);
+        rb.velocity = movement;
+    }
+
     void ClampPosition()
     {
         // Clamp the character's position within the specified limits
@@ -81,21 +80,13 @@ public class TopDownController : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, yAxisLimits.x, yAxisLimits.y);
         transform.position = pos;
     }
-    void Move()
-    {
-        Vector3 movement = new Vector3(moveDirection.x * moveSpeed, moveDirection.y, moveDirection.z);
-        rb.velocity = movement;
-        
-    }
 
     void FlipSpriteBasedOnDirection()
     {
         // Flip sprite based on the direction of the X-axis movement
         if (moveDirection.x < 0)
-            spriteRenderer.flipX = false; // Moving right
+            spriteRenderer.flipX = false; // Moving left
         else if (moveDirection.x > 0)
-            spriteRenderer.flipX = true; // Moving left
+            spriteRenderer.flipX = true; // Moving right
     }
-
-
 }
