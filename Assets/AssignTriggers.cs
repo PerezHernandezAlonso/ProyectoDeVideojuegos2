@@ -12,7 +12,7 @@ public class AssignTriggers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Perrito = GameObject.Find("PerroDetective");
         level2manager = Perrito.GetComponent<Level2Manager>();
         //level2manager.SearchTriggers();
         correctTriggerIndex = Random.Range(0, 4);

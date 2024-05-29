@@ -11,6 +11,7 @@ public class PositionUpdater : MonoBehaviour
     {
         perrito = GameObject.Find("PerroDetective");
         updatePosition();
+        
     }
 
     // Update is called once per frame
@@ -22,5 +23,6 @@ public class PositionUpdater : MonoBehaviour
     public void updatePosition()
     {
         perrito.transform.position = targetPosition;
+        Debug.Log("PerritoPosicionado");
     }
 }

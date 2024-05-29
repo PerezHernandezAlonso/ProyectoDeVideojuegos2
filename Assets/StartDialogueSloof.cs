@@ -10,7 +10,8 @@ public class StartDialogueSloof : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+   
     }
 
     // Update is called once per frame

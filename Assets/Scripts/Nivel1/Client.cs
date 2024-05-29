@@ -108,7 +108,9 @@ public class Client : MonoBehaviour
                         gamemanager.ConditionsPanda[2] = true;
                         } else if (gamemanager.ConditionsPanda[2] == true)
                     {
+                        GameObject.Find("PerroDetective").GetComponent<SloofMode>().enabled = false;
                         sceneSelect.PlayGame();
+
                         gamemanager.ConditionsPanda[2] = false;
                         Debug.Log("El panda te ha llevado al siguiente nivel");
                     }
