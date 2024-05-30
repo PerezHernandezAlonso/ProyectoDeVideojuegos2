@@ -17,9 +17,12 @@ public class Level2Manager : MonoBehaviour
     public GameObject[] Scents;
     public FilledBar filledBar;
     public bool MenuIsActive;
+    public GameObject Sloof;
+    private Animator sloofAnimator;
 
     void Start()
     {
+        sloofAnimator = Sloof.GetComponent<Animator>();
         // Initialize the triggers and barrels
         TriggerAssigner();
         SearchBarrels();
@@ -58,6 +61,7 @@ public class Level2Manager : MonoBehaviour
                 Scents[i].SetActive(false);
             }
             Scents[correctTriggerIndex].SetActive(true);
+            sloofAnimator.SetBool("SloofMode", true);
         }
         else
         {
@@ -65,6 +69,7 @@ public class Level2Manager : MonoBehaviour
             {
                 Scents[i].SetActive(false);
             }
+            sloofAnimator.SetBool("SloofMode", false);
         }
 
         if (filledBar.currentValue == 0)
