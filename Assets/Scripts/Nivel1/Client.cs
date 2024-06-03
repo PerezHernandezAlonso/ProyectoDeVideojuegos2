@@ -20,6 +20,8 @@ public class Client : MonoBehaviour
     public SpriteRenderer iconos;
     public GameObject menuBarriles;
     public SceneSelect sceneSelect;
+    public GameObject menuBebidas;
+    private bool MenuIsActive;
  
 
     private void Start()
@@ -156,9 +158,31 @@ public class Client : MonoBehaviour
                         menuBarriles.SetActive(true);
                     }
                     break;
-                }
 
-            }
+                case 6:
+                    if (gamemanager.ConditionsBartender[0] == false)
+                    {
+                        dialoguemanager.StartDialogue(Dialogo[0]);
+                        gamemanager.ConditionsBartender[0] = true;
+                    }
+                    else if (gamemanager.ConditionsBartender[0] == true && gamemanager.ConditionsBartender[1] == false)
+                    {
+                        menuBebidas.SetActive(true);
+                        MenuIsActive = true;
+                        gamemanager.ConditionsBartender[1] = true;
+                    }
+                    else
+                    {
+                        menuBebidas.SetActive(false);
+                        gamemanager.ConditionsBartender[1] = false;
+                    }
+                    break;
+                }
+           
+
+
+
+        }
         
         
     }

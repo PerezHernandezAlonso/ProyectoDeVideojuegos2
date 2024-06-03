@@ -18,17 +18,34 @@ MonoBehaviour:
     sentence: 'Parece que hemos caido en su trampa, Woofson. '
   - speakerName: Sloof
     speakerImage: {fileID: 21300000, guid: d41cac20a4bb1d04d8b2d5656be0003a, type: 3}
-    sentence: "Intenta llamar su atenci\xF3n, nos liberaremos y le daremos una paliza
-      para salir de aqu\xED."
-  - speakerName: 
-    speakerImage: {fileID: 0}
-    sentence: "Pulsa \"F\" para llamar la atenci\xF3n del Cocodrilo"
+    sentence: "Igualmente... parece que estas cadenas est\xE1n un poco sueltas."
+  - speakerName: Woofson
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: "Parece que podr\xEDamos escapar en cualquier momento, pero nos volver\xE1n
+      a atrapar..."
   - speakerName: Sloof
     speakerImage: {fileID: 21300000, guid: d41cac20a4bb1d04d8b2d5656be0003a, type: 3}
-    sentence: Aun no nos ha oido, prueba de nuevo.
+    sentence: "Llamemos su atenci\xF3n, y cuando venga le tenderemos una emboscada."
+  - speakerName: Woofson
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: "\xA1Eh t\xFA, seas quien seas, ven aqui!"
+  - speakerName: Croco
+    speakerImage: {fileID: 21300000, guid: 0d7a50fb9433604479dbd1da32ba6fc2, type: 3}
+    sentence: "\xA1Callaos ya! \xBFNo puede un simple cocodrilo descansar de vez
+      en cuando?"
+  - speakerName: Sloof
+    speakerImage: {fileID: 21300000, guid: d41cac20a4bb1d04d8b2d5656be0003a, type: 3}
+    sentence: "As\xED que es un cocodrilo... deber\xEDa haberlo visto venir. "
+  - speakerName: Sloof
+    speakerImage: {fileID: 21300000, guid: d41cac20a4bb1d04d8b2d5656be0003a, type: 3}
+    sentence: Tengamos cuidado pero sigamos con el plan.
+  - speakerName: Woofson
+    speakerImage: {fileID: 21300000, guid: 7e25429238c1e8842b3b001357ed062c, type: 3}
+    sentence: "\xA1\xBFQu\xE9 pasa, vives en las alcantarillas porque tienes miedo?!
+      \xBF\xA1O es porque apestas?!"
+  - speakerName: Croco
+    speakerImage: {fileID: 21300000, guid: 0d7a50fb9433604479dbd1da32ba6fc2, type: 3}
+    sentence: "\xA1Os vais a enterar!"
   - speakerName: 
     speakerImage: {fileID: 0}
-    sentence: "Pulsa \"F\" para llamar la atenci\xF3n del Cocodrilo"
-  - speakerName: 
-    speakerImage: {fileID: 0}
-    sentence: "Pulsa \"F\" para llamar la atenci\xF3n del Cocodrilo"
+    sentence: 

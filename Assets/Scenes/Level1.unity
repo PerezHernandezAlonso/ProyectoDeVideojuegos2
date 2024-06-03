@@ -2862,7 +2862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2741b6ba20c91654faeac8739b6572af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b848b17ea35f6442bc983ab2ec0ba84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3657,9 +3657,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items: 
   spriteObjetos:
-  - {fileID: 21300000, guid: 2741b6ba20c91654faeac8739b6572af, type: 3}
+  - {fileID: 21300000, guid: 8b848b17ea35f6442bc983ab2ec0ba84, type: 3}
   - {fileID: 21300000, guid: 027ec72cafc797d4f9fbcda578664718, type: 3}
-  - {fileID: 21300000, guid: 8d31088f88d42374198d5736c660cdd6, type: 3}
+  - {fileID: 21300000, guid: ffdc75e9cf38fa547bdbcd7554003439, type: 3}
   - {fileID: 21300000, guid: e21395dd398f6fd48a9b2c5bd4ec2c39, type: 3}
   - {fileID: 21300000, guid: b3d06d93afab2fe44b015a8cde6af60a, type: 3}
   objetos:
@@ -4431,7 +4431,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8d31088f88d42374198d5736c660cdd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffdc75e9cf38fa547bdbcd7554003439, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4938,6 +4938,7 @@ GameObject:
   - component: {fileID: 905713088}
   - component: {fileID: 905713087}
   - component: {fileID: 905713089}
+  - component: {fileID: 905713090}
   m_Layer: 0
   m_Name: Barman
   m_TagString: Client
@@ -5020,14 +5021,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905713080}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dac01257972423a4c9bbdfe909c0a5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 839015844}
   Dialogo:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 3375a04deae5d7e418a6e6859d0776c7, type: 2}
   dialoguemanager: {fileID: 1054984707}
 --- !u!136 &905713087
 CapsuleCollider:
@@ -5100,6 +5101,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &905713090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905713080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a84ed80c3a8fc54d8906111e6e14cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredItems: 
+  clientId: 6
+  Texto: {fileID: 503828795}
+  Dialogo:
+  - {fileID: 11400000, guid: 3375a04deae5d7e418a6e6859d0776c7, type: 2}
+  iconos: {fileID: 0}
+  menuBarriles: {fileID: 0}
+  sceneSelect: {fileID: 0}
+  menuBebidas: {fileID: 839015844}
 --- !u!1 &914978039
 GameObject:
   m_ObjectHideFlags: 0
@@ -5659,7 +5681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d31088f88d42374198d5736c660cdd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffdc75e9cf38fa547bdbcd7554003439, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5963,7 +5985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2b31efb29254f49a8f478e26eb2f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConditionsBartender: 
+  ConditionsBartender: 0000
   ConditionsCiervo: 00000000
   ConditionsPaloma: 00000000
   ConditionsPanda: 00000000
@@ -6940,7 +6962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2741b6ba20c91654faeac8739b6572af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b848b17ea35f6442bc983ab2ec0ba84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7034,7 +7056,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2741b6ba20c91654faeac8739b6572af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b848b17ea35f6442bc983ab2ec0ba84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7220,6 +7242,7 @@ MonoBehaviour:
   iconos: {fileID: 1397510406}
   menuBarriles: {fileID: 0}
   sceneSelect: {fileID: 0}
+  menuBebidas: {fileID: 0}
 --- !u!65 &1394544751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7752,6 +7775,7 @@ MonoBehaviour:
   iconos: {fileID: 1397510406}
   menuBarriles: {fileID: 0}
   sceneSelect: {fileID: 0}
+  menuBebidas: {fileID: 0}
 --- !u!65 &1473398183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8341,7 +8365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2741b6ba20c91654faeac8739b6572af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b848b17ea35f6442bc983ab2ec0ba84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9952,7 +9976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d31088f88d42374198d5736c660cdd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffdc75e9cf38fa547bdbcd7554003439, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10573,6 +10597,7 @@ MonoBehaviour:
   iconos: {fileID: 1397510406}
   menuBarriles: {fileID: 0}
   sceneSelect: {fileID: 660318414}
+  menuBebidas: {fileID: 0}
 --- !u!65 &2039861369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10982,6 +11007,7 @@ MonoBehaviour:
   iconos: {fileID: 1397510406}
   menuBarriles: {fileID: 0}
   sceneSelect: {fileID: 0}
+  menuBebidas: {fileID: 0}
 --- !u!65 &2104962185
 BoxCollider:
   m_ObjectHideFlags: 0
