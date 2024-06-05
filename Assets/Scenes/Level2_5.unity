@@ -1991,6 +1991,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scents: {fileID: 0}
+  gamemanager: {fileID: 0}
+  allScents: []
+  scentsActive: 
+  step1: 0
+  step2: 0
+  step3: 0
+  step4: 0
+  Sloof: {fileID: 0}
+  filledBar: {fileID: 0}
 --- !u!114 &1489860654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2004,6 +2013,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: 
+  spriteObjetos: []
+  objetos: []
+  maxItems: 3
 --- !u!114 &1489860655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,6 +2130,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  Scents: []
+  filledBar: {fileID: 0}
+  MenuIsActive: 0
+  Sloof: {fileID: 0}
 --- !u!1 &1582933067
 GameObject:
   m_ObjectHideFlags: 0

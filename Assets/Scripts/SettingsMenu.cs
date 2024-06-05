@@ -8,6 +8,11 @@ public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public TMPro.TMP_Dropdown resolutionsDropdown;
 
     Resolution[] resolutions;

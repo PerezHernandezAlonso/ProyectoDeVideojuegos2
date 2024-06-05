@@ -224,8 +224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 142634690}
   dialogue: {fileID: 11400000, guid: f3fb6c844a193a346a9a900592a97825, type: 2}
-  libre: 0
-  isTalking: 0
   gameManager: {fileID: 1475348297}
   sceneSelect: {fileID: 0}
 --- !u!114 &142634690
@@ -242,7 +240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerImage: {fileID: 1189832951}
   dialogueText: {fileID: 678480666}
+  gameManager: {fileID: 0}
   dialogueBox: {fileID: 142634686}
+  isTalking: 0
 --- !u!1 &150567409
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +565,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Scents: []
+  filledBar: {fileID: 0}
+  MenuIsActive: 0
+  Sloof: {fileID: 0}
 --- !u!95 &403613017
 Animator:
   serializedVersion: 5
@@ -668,6 +671,7 @@ MonoBehaviour:
   step2: 0
   step3: 0
   step4: 0
+  Sloof: {fileID: 0}
   filledBar: {fileID: 0}
 --- !u!114 &403613022
 MonoBehaviour:
@@ -682,6 +686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: 
+  spriteObjetos: []
+  objetos: []
+  maxItems: 3
 --- !u!114 &403613023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2373,7 +2380,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerImage: {fileID: 1189832951}
   dialogueText: {fileID: 678480666}
+  gameManager: {fileID: 0}
   dialogueBox: {fileID: 142634686}
+  isTalking: 0
 --- !u!4 &1985032533
 Transform:
   m_ObjectHideFlags: 0
@@ -2403,8 +2412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1985032532}
   dialogue: {fileID: 11400000, guid: f3fb6c844a193a346a9a900592a97825, type: 2}
-  libre: 0
-  isTalking: 0
   gameManager: {fileID: 1475348297}
   sceneSelect: {fileID: 1985032535}
 --- !u!114 &1985032535

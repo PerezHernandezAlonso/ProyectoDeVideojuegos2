@@ -5832,6 +5832,7 @@ MonoBehaviour:
   iconos: {fileID: 0}
   menuBarriles: {fileID: 598874584}
   sceneSelect: {fileID: 0}
+  menuBebidas: {fileID: 0}
 --- !u!65 &1949976117
 BoxCollider:
   m_ObjectHideFlags: 0
